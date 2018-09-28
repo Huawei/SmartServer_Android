@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sl_list_item_section_gap"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/add_device_item"
+            style="@style/SingleLineListItem">
+            <TextView
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_discovery_add_device"
+                android:text="@string/title_add_device" />
+
+            <ImageView style="@style/SingleLineListItem_ItemDisplayIcon" />
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/sl_list_item_padding_left"
+            android:background="@drawable/bg_form_list_item_divider" />
+
+        <RelativeLayout
+            android:id="@+id/scan_qr_code"
+            style="@style/SingleLineListItem">
+
+            <TextView
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_scan"
+                android:text="@string/scan_one_d_code" />
+
+            <ImageView style="@style/SingleLineListItem_ItemDisplayIcon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

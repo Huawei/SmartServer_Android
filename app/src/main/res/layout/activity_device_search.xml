@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.huawei.smart.server.widget.HWMEditText
+            android:id="@+id/searchBar"
+            style="@style/SearchInputTextBase"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_input_height"
+            android:layout_weight="1"
+            android:drawableEnd="@mipmap/ic_clear"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/search_input_margin_left_right"
+            android:layout_gravity="center"
+            android:text="@string/button_cancel"
+            android:textColor="@color/colorTab"
+            android:textSize="@dimen/font_size_medium" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/colorDivider" />
+
+
+    <RelativeLayout
+        android:id="@+id/recent_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/display_list_item_h"
+        android:background="@drawable/border_bottom"
+        android:paddingStart="@dimen/search_input_margin_left_right">
+
+        <TextView
+            style="@style/DisplayListItem_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ds_label_recent_history"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/clear_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="14dp"
+            android:paddingEnd="@dimen/search_input_margin_left_right"
+            android:paddingStart="@dimen/search_input_margin_left_right"
+            android:paddingTop="14dp"
+            android:src="@mipmap/ic_clear" />
+    </RelativeLayout>
+
+
+    <com.huawei.smart.server.widget.EnhanceRecyclerView
+        android:id="@+id/historyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/widget_empty_list_view" />
+
+</LinearLayout>

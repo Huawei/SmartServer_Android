@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/healthy_event_item_view"
+    android:layout_width="match_parent"
+    style="@style/MultipleLineListItem"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/subject"
+            style="@style/MultipleLineListItem_Subject"
+            android:drawableStart="@mipmap/ic_status_ok"
+            android:text="@string/he_filter_critical" />
+
+        <TextView
+            style="@style/MultipleLineListItem_SubjectTips" />
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ml_list_item_gap"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MultipleLineListItem_ItemLabel"
+            android:text="@string/he_label_event_code" />
+
+        <TextView
+            android:id="@+id/event_id"
+            style="@style/MultipleLineListItem_ItemContent"
+            android:text="0x0841FFFF" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ml_list_item_gap"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MultipleLineListItem_ItemLabel"
+            android:text="@string/he_label_event_on" />
+
+        <TextView
+            android:id="@+id/created_on"
+            style="@style/MultipleLineListItem_ItemContent"
+            android:text="@string/label_default_txt" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ml_list_item_gap"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MultipleLineListItem_ItemLabel"
+            android:layout_width="wrap_content"
+            android:text="@string/he_label_event_desc" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            style="@style/MultipleLineListItem_ItemContent"
+            android:text="@string/label_default_txt" />
+    </LinearLayout>
+
+</LinearLayout>

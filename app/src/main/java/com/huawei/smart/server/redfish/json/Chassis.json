@@ -1,0 +1,31 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#Chassis/Members/$entity",
+  "@odata.id": "/redfish/v1/Chassis/1",
+  "@odata.type": "#Chassis.v1_3_0.Chassis",
+  "Id": "1",
+  "Name": "Computer System Chassis",
+  "ChassisType": "Blade",
+  "IndicatorLED": "Off",
+  "Status": {
+    "State": "Enabled",
+    "Health": "OK"
+  },
+  "Thermal": {
+    "@odata.id": "/redfish/v1/Chassis/1/Thermal"
+  },
+  "Power": {
+    "@odata.id": "/redfish/v1/Chassis/1/Power"
+  },
+  "Links": {
+    "ComputerSystems": [
+      {
+        "@odata.id": "/redfish/v1/Systems/1"
+      }
+    ],
+    "ManagedBy": [
+      {
+        "@odata.id": "/redfish/v1/Managers/1"
+      }
+    ]
+  }
+}

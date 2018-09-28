@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/not_support"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="150dp"
+    android:text="@string/label_not_support"
+    android:textSize="16dp"
+    android:textColor="@color/colorAccent"
+    android:visibility="gone"
+ />

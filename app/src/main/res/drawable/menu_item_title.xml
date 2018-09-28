@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/list_corner"
+                android:topRightRadius="@dimen/list_corner"/>
+            <solid android:color="@color/menu_item_title_normal"/>
+        </shape>
+    </item>
+</selector>

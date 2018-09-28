@@ -1,0 +1,6 @@
+/build
+.gradle
+.idea
+/build
+huawei-server-manager.iml
+local.properties

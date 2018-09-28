@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground"
+        android:orientation="vertical">
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/fan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sl_list_item_section_gap"
+            app:label="@string/rs_label_fan"
+            app:value="@string/label_value_txt" />
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label="@string/rs_label_power"
+            app:value="@string/label_value_txt" />
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/drive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label="@string/rs_label_drive"
+            app:value="@string/label_value_txt" />
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/cpu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label="@string/rs_label_cpu"
+            app:value="@string/label_value_txt" />
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/memory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label="@string/rs_label_memory"
+            app:value="@string/label_value_txt" />
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label="@string/rs_label_temperature"
+            app:value="@string/label_value_txt"
+            app:with_divider="false" />
+    </LinearLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

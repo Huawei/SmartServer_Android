@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormSection"
+                android:text="@string/loc_setup_location_label" />
+
+            <EditText
+                android:id="@+id/location"
+                style="@style/MultipleLineInputText"
+                android:hint="@string/loc_setup_location_input_hint">
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp"
+                android:text="@string/loc_setup_location_format_hint"
+                android:textColor="@color/colorComment"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/Button_Confirm"
+                android:text="@string/button_done" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

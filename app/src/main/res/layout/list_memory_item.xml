@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MultipleLineListItem"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/name"
+            style="@style/MultipleLineListItem_Subject"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Memory" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/MultipleLineListItem_SubjectTips"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="@integer/memory_grid_column_count">
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_type" />
+
+            <TextView
+                android:id="@+id/type"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_capacity" />
+
+            <TextView
+                android:id="@+id/capacity"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_speed" />
+
+            <TextView
+                android:id="@+id/speed"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_width_bit" />
+
+            <TextView
+                android:id="@+id/width_bit"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_rank_count" />
+
+            <TextView
+                android:id="@+id/rank_count"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_min_voltage" />
+
+            <TextView
+                android:id="@+id/min_voltage"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_manufacturer" />
+
+            <TextView
+                android:id="@+id/manufacturer"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_serial_no" />
+
+            <TextView
+                android:id="@+id/serial_no"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_part_no" />
+
+            <TextView
+                android:id="@+id/part_no"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_position" />
+
+            <TextView
+                android:id="@+id/position"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item"
+            android:layout_columnSpan="@integer/memory_grid_column_count">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_memo_label_technology" />
+
+            <TextView
+                android:id="@+id/technology"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/form_list_item_padding_left"
+        android:background="@drawable/bg_form_list_item_divider" />
+</merge>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/widget_title_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/section_title_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.huawei.smart.server.widget.LabeledEditTextView
+                    android:id="@+id/ad_tv_connect_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/sl_list_item_section_gap"
+                    app:clickable="true"
+                    app:input_icon="@mipmap/ic_detail"
+                    app:input_value="@string/ad_connect_type_network"
+                    app:label_text="@string/ad_label_connect_type" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+                    <!-- Device section -->
+                    <TextView
+                        style="@style/FormSection"
+                        android:text="@string/ad_section_title_device" />
+
+                    <com.huawei.smart.server.widget.LabeledEditTextView
+                        android:id="@+id/ad_tv_hostname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:input_hint="@string/ad_hint_hostname"
+                        app:label_text="@string/ad_label_hostname" />
+
+                    <include layout="@layout/form_list_item_divider" />
+
+                    <com.huawei.smart.server.widget.LabeledEditTextView
+                        android:id="@+id/ad_tv_port"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        app:input_hint="@string/ad_hint_port"
+                        app:input_value="443"
+                        app:label_text="@string/ad_label_port" />
+
+                    <!-- Device authentication section -->
+                    <TextView
+                        style="@style/FormSection"
+                        android:text="@string/ad_section_title_authentication" />
+
+                    <com.huawei.smart.server.widget.LabeledEditTextView
+                        android:id="@+id/ad_tv_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:input_hint="@string/ad_hint_username"
+                        app:input_value="root"
+                        app:label_text="@string/ad_label_username" />
+
+                    <include layout="@layout/form_list_item_divider" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        >
+                    <com.huawei.smart.server.widget.LabeledEditTextView
+                        android:id="@+id/ad_tv_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        app:input_hint="@string/ad_hint_password"
+                        app:label_text="@string/ad_label_password" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <include layout="@layout/form_list_item_divider" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/section_height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:paddingLeft="@dimen/form_list_item_padding_left"
+                            android:text="@string/ad_label_remember_pwd"
+                            android:textSize="@dimen/form_list_item_label_font_size" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/ad_switch_remember_pwd"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/form_list_item_with_switch_pe"
+                            style="@style/SwitchButton" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/ad_button_add"
+                    style="@style/Button_Confirm"
+                    android:text="@string/button_done" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

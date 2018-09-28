@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item
+    android:left="@dimen/form_list_item_padding_left"
+    android:right="-2dp"
+    android:top="-2dp">
+    <shape>
+        <size android:height="1dp"/>
+        <solid android:color="@color/colorDivider"/>
+    </shape>
+</item>
+
+</layer-list>

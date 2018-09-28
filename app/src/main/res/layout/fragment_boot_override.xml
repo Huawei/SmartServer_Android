@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/FormSection"
+        android:text="@string/bs_tab_boot_override" />
+
+    <RadioGroup
+        android:id="@+id/AllowableOverrideValues"
+        style="@style/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/radio_group_divider"
+        android:showDividers="middle|end">
+
+    </RadioGroup>
+
+    <FrameLayout
+        style="@style/FormItem"
+        android:layout_height="@dimen/form_list_item_with_radio_h"
+        android:minHeight="@dimen/form_list_item_with_radio_h">
+
+        <TextView
+            style="@style/FormItemLabel"
+            android:text="@string/bs_label_override_enabled" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/override_enabled"
+            style="@style/SwitchButton"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/form_list_item_with_switch_pe" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Button_Confirm"
+        android:text="@string/button_submit" />
+
+</LinearLayout>

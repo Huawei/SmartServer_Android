@@ -1,0 +1,726 @@
+﻿<resources>
+    <string name="app_name">SmartServer</string>
+    <string name="app_full_name">SmartServer Mobile</string>
+
+    <!-- // common start // -->
+    <string name="search_input_hint">搜索</string>
+    <string name="label_list_no_record">暂无可显示记录</string>
+    <string name="label_not_support">该设备不支持该功能.</string>
+    <string name="label_default_txt">label</string>
+    <string name="label_value_txt">-</string>
+    <string name="msg_loading">加载中...</string>
+    <string name="msg_action_success">操作成功</string>
+    <string name="msg_action_failed">操作失败</string>
+    <string name="msg_auth_failed_title">认证失败</string>
+    <string name="msg_auth_illegal_account">请检查你的用户名密码是否正确或者账号状态是否异常。</string>
+    <string name="msg_auth_too_many_session">同时登录用户数太多</string>
+    <string name="msg_not_implement">当前设备不支持该功能</string>
+    <string name="msg_access_api_failed">请求失败</string>
+    <string name="msg_access_api_timeout">请求超时</string>
+    <string name="msg_app_exception">应用异常</string>
+
+    <string name="resource_state_enabled">启用</string>
+    <string name="resource_state_disabled">禁用</string>
+    <string name="resource_state_absent">不在位</string>
+    <string name="state_unknown">未知</string>
+
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="turn_off_flashlight">Turn off Flashlight</string>
+
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="Enable">已启用</string>
+    <string name="Disable">已禁用</string>
+    <string name="Stopped">已停用</string>
+
+    <string name="no_browser_app_found">未找到浏览器</string>
+    <string name="please_install_a_browser_app">请安装浏览器应用.</string>
+    <!-- // common edn // -->
+
+    <!-- 文件夹选择 -->
+    <string name="md_up_label">上一级</string>
+    <string name="md_back_label">后退</string>
+    <string name="md_cancel_label">取消</string>
+    <string name="md_choose_label">选择</string>
+    <string name="md_done_label">完成</string>
+    <string name="md_storage_perm_error">应用无读写存储权限</string>
+    <string name="md_new_folder">新建</string>
+    <string name="md_custom_label">Custom</string>
+    <string name="md_error_label">Error</string>
+    <string name="md_presets_label">Presets</string>
+
+    <!-- // title start // -->
+    <string name="title_go_back_txt">返回</string>
+    <string name="title_device_list">设备管理</string>
+    <string name="title_add_device">添加设备</string>
+    <string name="title_edit_device">编辑设备</string>
+    <string name="title_display_report">报告详情</string>
+    <string name="title_policy">用户协议</string>
+    <string name="title_discovery">发现</string>
+    <string name="title_my_profile">我的</string>
+    <string name="title_about_us">关于我们</string>
+    <string name="title_feedback">帮助与反馈</string>
+    <string name="title_submit_feedback">意见反馈</string>
+    <string name="title_network_port">网口列表</string>
+    <string name="title_drive">物理盘列表</string>
+    <string name="title_volumes">逻辑盘列表</string>
+    <string name="title_security">安全设置</string>
+    <!-- // title end // -->
+
+    <!-- // menu start // -->
+    <string name="menu_about_me">我的</string>
+    <string name="menu_devices">设备</string>
+    <string name="menu_find">发现</string>
+    <!-- // menu end // -->
+
+    <!-- // button start // -->
+    <string name="button_done">确定</string>
+    <string name="button_share">分享</string>
+    <string name="button_sure">确定</string>
+    <string name="button_submit">提交</string>
+    <string name="button_finish">完成</string>
+    <string name="button_add">添加</string>
+    <string name="button_delete">删除</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_recount">清零并重新开始统计</string>
+    <!-- // button end // -->
+
+    <!-- // device list starts // -->
+    <string name="ds_dialog_input_device_pwd_hint">请输入设备密码</string>
+    <string name="ds_label_no_search_history">暂无历史搜索记录</string>
+    <string name="ds_label_no_device">无可显示记录</string>
+    <string name="ds_label_recent_history">最近搜索</string>
+    <!-- // device list end // -->
+
+    <!-- // add device starts // -->
+    <string name="ad_default_device_name">设备</string>
+    <string name="ad_as_connect_type_title">选择接入方式</string>
+
+    <string name="ad_section_title_device">设备信息</string>
+    <string name="ad_section_title_authentication">认证信息</string>
+
+    <string name="ad_connect_type_network">网络</string>
+    <string name="ad_connect_type_mobile">移动数据(暂不支持)</string>
+    <string name="ad_connect_type_bluetooth">蓝牙(暂不支持)</string>
+
+    <string name="ad_label_connect_type">接入方式</string>
+    <string name="ad_label_hostname">主机</string>
+    <string name="ad_hint_hostname">请输入设备访问域名或IP</string>
+    <string name="ad_label_port">端口</string>
+    <string name="ad_hint_port">请输入设备访问端口</string>
+    <string name="ad_label_alias">别名</string>
+
+    <string name="ad_label_username">用户</string>
+    <string name="ad_hint_username">请输入设备访问用户名</string>
+    <string name="ad_label_password">密码</string>
+    <string name="ad_hint_password">请输入设备访问密码</string>
+    <string name="ad_label_remember_pwd">记住密码</string>
+    <string name="ad_label_domain">域</string>
+
+    <string name="ad_connect_type_is_empty">请选择接入方式</string>
+    <string name="ad_hostname_is_empty">IP/主机名不能为空</string>
+    <string name="ad_hostname_is_illegal">IP/主机名格式有误</string>
+    <string name="ad_hostname_exists">同一IP/主机名的设备已存在</string>
+    <string name="ad_port_is_empty">端口不能为空</string>
+    <string name="ad_port_is_illegal">端口需为0&#8211;65535的数字</string>
+    <string name="ad_username_is_empty">用户不能为空</string>
+    <string name="ad_password_is_empty">密码不能为空</string>
+    <string name="ad_failed_to_add_device">添加设备失败</string>
+    <!--addPowerSupplies add device ends // -->
+
+    <!-- // device summary start //-->
+    <string name="ds_label_basic_info">系统信息</string>
+    <string name="ds_label_model">产品型号</string>
+    <string name="ds_label_ipv4">IPv4地址</string>
+    <string name="ds_label_ipv6">IPv6地址</string>
+    <string name="ds_label_location">设备位置</string>
+    <string name="ds_label_health_state">健康状态</string>
+    <string name="ds_label_power_state">上电状态</string>
+    <string name="ds_label_serial_number">产品序列号</string>
+    <string name="ds_label_asset_tag">资产标签</string>
+    <string name="ds_label_bmc_version">BMC版本</string>
+    <string name="ds_label_bios_version">BIOS版本</string>
+    <string name="ds_label_cpu">CPU信息</string>
+    <string name="ds_label_memory">内存信息</string>
+    <string name="ds_label_menu_health">当前告警</string>
+    <!--<string name="ds_label_menu_health">健康事件</string>-->
+    <string name="ds_label_menu_system_log">系统事件</string>
+    <!--<string name="ds_label_menu_system_log">系统日志</string>-->
+    <string name="ds_label_menu_network_setting">网络设置</string>
+    <string name="ds_label_menu_hardware">硬件信息</string>
+    <string name="ds_label_menu_realtime_state">实时状态</string>
+    <string name="ds_label_menu_location">设备位置</string>
+    <string name="ds_label_menu_power_consumption">功耗信息</string>
+    <string name="ds_label_menu_boot_setting">启动设置</string>
+    <string name="ds_label_menu_power">电源开关</string>
+    <string name="ds_label_menu_expend">更多</string>
+    <string name="ds_label_menu_indicator_LED">定位灯</string>
+    <string name="ds_label_menu_firmware">固件信息</string>
+    <string name="ds_label_menu_report">生成报告</string>
+    <string name="ds_label_menu_collector">一键收集</string>
+    <string name="ds_label_menu_folder">收起</string>
+    <string name="ds_action_switch_device">切换设备</string>
+    <string name="ds_label_no_switchable_device">暂无可切换设备</string>
+
+    <string name="ds_power_state_on">已上电</string>
+    <string name="ds_power_state_off">已下电</string>
+    <string name="ds_health_state_ok">正常</string>
+    <string name="ds_health_state_warning">告警</string>
+    <string name="ds_health_state_critical">异常</string>
+    <!-- // device summary end //-->
+
+    <!-- // my profile strat//-->
+    <string name="profile_push_notification">事件推送</string>
+    <string name="profile_send_feedback">帮助与反馈</string>
+    <string name="profile_about_us">关于我们</string>
+    <string name="profile_security">安全设置</string>
+    <string name="profile_theme">主题皮肤</string>
+    <string name="profile_select_theme">选择颜色</string>
+    <string name="profile_lang">多语言</string>
+    <string name="profile_select_lang">选择语言</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_en">English</string>
+    <!-- // my profile end//-->
+
+    <!-- // health event start//-->
+    <string name="he_label_event_desc">事件描述:</string>
+    <string name="he_label_suggestion">处理建议:</string>
+    <string name="he_label_event_code">事件码:</string>
+    <string name="he_label_event_on">产生时间:</string>
+    <string name="he_filter_all">全部</string>
+    <string name="he_filter_critical">紧急事件</string>
+    <string name="he_filter_warning">严重事件</string>
+    <string name="he_filter_ok">正常事件</string>
+    <!-- // health event end//-->
+
+    <!-- System log start//-->
+    <string name="system_log_level">日志级别</string>
+    <string name="system_log_subject">主体类型</string>
+    <string name="system_log_create_date">产生时间</string>
+    <string name="system_log_select_level_title">选择日志级别</string>
+    <string name="system_log_select_level_critical">紧急</string>
+    <string name="system_log_select_level_warning">严重</string>
+    <string name="system_log_select_level_ok">轻微</string>
+    <string name="system_log_select_type_title">选择主体类型</string>
+    <string name="system_log_select_type_base">Base Plane</string>
+    <string name="system_log_select_type_bmc">BMC</string>
+    <string name="system_log_select_type_button">Button</string>
+    <string name="system_log_select_create_date_title">选择产生时间</string>
+    <string name="system_log_select_create_date_today">今天</string>
+    <string name="system_log_select_create_date_seven_days">近7天</string>
+    <string name="system_log_select_create_date_one_month">近30天</string>
+    <string name="system_log_select_create_date_range">特定日期范围</string>
+    <string name="system_log_date_range_from">起始时间</string>
+    <string name="system_log_date_range_to">截止时间</string>
+    <string name="system_log_select_all">全部</string>
+
+    <string name="system_log_label_event_desc">事件描述:</string>
+    <string name="system_log_label_suggestion">处理建议:</string>
+    <string name="system_log_label_event_code">事件码:</string>
+    <string name="system_log_label_status">状态:</string>
+    <string name="system_log_label_produced_on">产生时间:</string>
+
+    <string name="system_log_status_asserted">Asserted</string>
+    <string name="system_log_status_deasserted">Deasserted</string>
+
+    <string name="system_log_prompt_clear">确定要清除系统日志?</string>
+    <!-- System log end//-->
+
+    <!-- // network setting start //-->
+    <string name="ns_title">网络设置</string>
+    <string name="ns_tab_hostname">主机名</string>
+    <string name="ns_tab_port">网口</string>
+    <string name="ns_tab_network">网络</string>
+    <string name="ns_tab_vlan">VLAN</string>
+    <string name="ns_tab_time_zone">时区</string>
+
+    <string name="ns_hostname_section_name">设置iBMC主机名</string>
+    <string name="ns_hostname_label_hostname">主机名</string>
+    <string name="ns_network_msg_illegal_hostname">主机名输入有误</string>
+    <string name="ns_network_hint_hostname">由1到64位的数字、英文字母和\'-\'组成，\'-\'不能出现在头尾</string>
+
+    <string name="ns_port_label_port_type">网口模式</string>
+    <string name="ns_port_section_port_selection">选择网口</string>
+    <string name="ns_port_hint_lose_conn">变更管理网口地址会导致网络连接断开，请谨慎操作。</string>
+
+    <string name="ns_port_port_type_dedicated">专用网口</string>
+    <string name="ns_port_port_type_aggregation">汇聚网口</string>
+    <string name="ns_port_port_type_LOM">板载网口</string>
+    <string name="ns_port_port_type_LOM2">板载网口2</string>
+    <string name="ns_port_port_type_External_PCIe">PCIE 扩展网口</string>
+
+    <string name="ns_port_port_type_dedicated_prefix">eth</string>
+    <string name="ns_port_port_type_aggregation_prefix">eth</string>
+    <string name="ns_port_port_type_LOM_prefix">Port</string>
+    <string name="ns_port_port_type_LOM2_prefix">Port</string>
+    <string name="ns_port_port_type_External_PCIe_prefix">PCIE</string>
+
+    <string name="ns_port_title_port_mode_selection">选择网口模式</string>
+    <string name="ns_port_port_mode_fixed">固定设置</string>
+    <string name="ns_port_port_mode_automatic">自动选择</string>
+    <string name="ns_port_prompt_update_port">修改网口设置可能会导致链接断开，确认保存？</string>
+    <!-- // ethernet interface end //-->
+
+    <!-- network start //-->
+    <string name="ns_network_ip_version">IP协议</string>
+    <string name="ns_network_ip_version_setting">IP协议设置</string>
+    <string name="ns_network_ip_version_selection_title">选择IP协议</string>
+    <string name="ns_network_ip_version_ipv4">IPv4</string>
+    <string name="ns_network_ip_version_ipv6">IPv6</string>
+    <string name="ns_network_ip_version_ipv4_and_ipv6">IPv4+IPv6</string>
+
+    <string name="ns_network_dns_addr_origin_selection_title">选择 DNS 获取方式</string>
+    <string name="ns_network_dns_addr_origin_static">手动配置</string>
+    <string name="ns_network_dns_addr_origin_ipv4">使用 IPv4 DNS</string>
+    <string name="ns_network_dns_addr_origin_ipv6">使用 IPv6 DNS</string>
+
+    <string name="ns_network_label_ipv4">IPv4设置</string>
+    <string name="ns_network_label_ipv6">IPv6设置</string>
+    <string name="ns_network_label_dhcp">自动获取</string>
+    <string name="ns_network_label_ip_address">IP 地址</string>
+    <string name="ns_network_label_gateway">默认网关</string>
+    <string name="ns_network_label_subnet_mask">子网掩码</string>
+    <string name="ns_network_label_prefix_len">前缀长度</string>
+    <string name="ns_network_label_link_local_address">链路本地地址</string>
+    <string name="ns_network_label_mac">MAC 地址</string>
+    <string name="ns_network_label_DNS">DNS</string>
+    <string name="ns_network_label_dns_setup_method">DNS获取方式</string>
+    <string name="ns_network_label_domain">域名</string>
+    <string name="ns_network_label_primary_DNS">首选DNS</string>
+    <string name="ns_network_label_alternative_DNS">备选DNS</string>
+
+    <string name="ns_network_error_ip_version_required">请选择IP协议</string>
+    <string name="ns_network_error_ipv4_addr_required">请输入IPv4地址</string>
+    <string name="ns_network_error_ipv4_addr_illegal">IPv4地址格式有误</string>
+    <string name="ns_network_error_ipv4_mask_required">请输入IPv4掩码</string>
+    <string name="ns_network_error_ipv4_mask_illegal">IPv4掩码格式有误</string>
+    <string name="ns_network_error_ipv4_gateway_required">请输入IPv4网关</string>
+    <string name="ns_network_error_ipv4_gateway_illegal">IPv4网关格式有误</string>
+
+    <string name="ns_network_error_ipv6_addr_required">请输入IPv6地址</string>
+    <string name="ns_network_error_ipv6_addr_illegal">IPv6地址格式有误</string>
+    <string name="ns_network_error_ipv6_prefix_required">请输入IPv6前缀长度</string>
+    <string name="ns_network_error_ipv6_prefix_illegal">IPv6前缀长度须为 0~128 的整数</string>
+    <string name="ns_network_error_ipv6_gateway_required">请输入IPv6网关</string>
+    <string name="ns_network_error_ipv6_gateway_illegal">IPv6网关格式有误</string>
+
+    <string name="ns_network_error_domain_illegal">域名格式有误</string>
+    <string name="ns_network_error_primary_dns_required">请输入首选DNS地址</string>
+    <string name="ns_network_error_primary_dns_illegal">首选DNS地址格式有误</string>
+    <string name="ns_network_error_alternative_dns_required">请输入备选DNS地址</string>
+    <string name="ns_network_error_alternative_dns_illegal">备选DNS地址格式有误</string>
+
+    <string name="ns_network_prompt_update_ip_version">修改IP版本设置可能会导致链接断开，确认保存？</string>
+    <string name="ns_network_prompt_update_ipv4_setting">修改IPv4设置可能会导致链接断开，确认保存？</string>
+    <string name="ns_network_prompt_update_ipv6_setting">修改IPv6设置可能会导致链接断开，确认保存？</string>
+    <string name="ns_network_prompt_update_dns_setting">修改DNS设置可能会导致链接断开，确认保存？</string>
+
+    <!-- // VLAN start // -->
+    <string name="ns_vlan_label_setting">VLAN设置</string>
+    <string name="ns_vlan_label_vlan">VLAN</string>
+    <string name="ns_vlan_label_vlan_id">VLAN ID</string>
+    <string name="ns_vlan_hint_vlan_id">请输入1-4094整数</string>
+    <string name="ns_vlan_illegal_vlan_id">VLAN ID 必须为1-4094的整数</string>
+    <!-- // VLAN end // -->
+
+    <!-- // Time zone start // -->
+    <string name="ns_time_zone_label_select_zone">选择区域</string>
+    <string name="ns_time_zone_label_zone">区域</string>
+    <string name="ns_time_zone_label_select_timezone">选择时区</string>
+    <string name="ns_time_zone_label_timezone">时区</string>
+    <string name="ns_time_zone_msg_timezone_illegal">请选择时区</string>
+    <!-- // Time zone end // -->
+
+    <!-- network setting end //-->
+
+
+
+    <!-- // About us start // -->
+    <string name="about_us_label_version">设备管理v0.1.0</string>
+    <string name="about_us_label_features">功能介绍</string>
+    <string name="about_us_label_update">检查新版本</string>
+    <string name="about_us_label_rate">去评分</string>
+    <string name="about_us_label_agreement">用户协议</string>
+    <!-- // About us start // -->
+
+    <!-- //Hardware start //-->
+    <string name="hardware_tab_memory">内存</string>
+    <string name="hardware_tab_cpu">CPU</string>
+    <string name="hardware_tab_power">电源</string>
+    <string name="hardware_tab_netcard">网卡</string>
+    <string name="hardware_tab_storage">存储</string>
+
+    <string name="hardware_state_enabled">启用</string>
+    <string name="hardware_status_normal">正常</string>
+    <string name="hardware_status_in_place">在位</string>
+
+    <string name="hardware_cpu_label_manufacturer">厂商</string>
+    <string name="hardware_cpu_label_model">型号</string>
+    <string name="hardware_cpu_label_processor_id">处理器ID</string>
+    <string name="hardware_cpu_label_speed_MHZ">主频</string>
+    <string name="hardware_cpu_label_processor">处理器</string>
+    <string name="hardware_cpu_label_cores_and_threads">核数/线程数</string>
+    <string name="hardware_cpu_label_L123_cache">一/二/三级缓存</string>
+    <string name="hardware_cpu_label_part_no">部件编码</string>
+
+    <string name="hardware_memo_label_type">类型:</string>
+    <string name="hardware_memo_label_capacity">容量:</string>
+    <string name="hardware_memo_label_speed">主频:</string>
+    <string name="hardware_memo_label_width_bit">位宽:</string>
+    <string name="hardware_memo_label_rank_count">Rank(列):</string>
+    <string name="hardware_memo_label_min_voltage">最小电压:</string>
+    <string name="hardware_memo_label_manufacturer">厂商:</string>
+    <string name="hardware_memo_label_serial_no">序列号:</string>
+    <string name="hardware_memo_label_part_no">部件编码:</string>
+    <string name="hardware_memo_label_technology">技术:</string>
+    <string name="hardware_memo_label_position">位置:</string>
+
+    <string name="hardware_power_power_supply_type_ac">AC</string>
+    <string name="hardware_power_power_supply_type_dc">DC</string>
+    <string name="hardware_power_power_supply_type_ac_or_dc">AC/DC</string>
+    <string name="hardware_power_label_manufacturer">厂商:</string>
+    <string name="hardware_power_label_model">类型:</string>
+    <string name="hardware_power_label_serial_no">序列号:</string>
+    <string name="hardware_power_label_firmware_version">固件版本:</string>
+    <string name="hardware_power_label_capacity_watts">额定功率:</string>
+    <string name="hardware_power_label_supply_type">输入模式:</string>
+    <string name="hardware_power_label_part_no">部件编码:</string>
+
+    <string name="hardware_network_adapter_list">网卡</string>
+    <string name="hardware_network_adapter_label_name">名称</string>
+    <string name="hardware_network_adapter_label_manufacturer">厂商</string>
+    <string name="hardware_network_adapter_label_model">型号</string>
+    <string name="hardware_network_adapter_label_chip_manufacturer">芯片厂商</string>
+    <string name="hardware_network_adapter_label_chip_model">芯片型号</string>
+    <string name="hardware_network_adapter_label_position">位置</string>
+    <string name="hardware_network_adapter_label_ports">网口列表</string>
+
+    <string name="hardware_network_port_label_port_number">Port</string>
+    <string name="hardware_network_port_label_port_type">介质类型:</string>
+    <string name="hardware_network_port_label_mac_addr">MAC地址:</string>
+    <string name="hardware_network_port_label_link_status">状态:</string>
+    <string name="hardware_network_port_port_type_optical">光口</string>
+    <string name="hardware_network_port_port_type_electrical">电口</string>
+    <string name="hardware_network_port_link_status_down">断开</string>
+    <string name="hardware_network_port_link_status_up">连接</string>
+
+    <string name="hardware_storage_label_name">名称</string>
+    <string name="hardware_storage_label_model">类型</string>
+    <string name="hardware_storage_label_firmware_version">固件版本</string>
+    <string name="hardware_storage_label_support_ext_device">支持带外管理</string>
+    <string name="hardware_storage_label_support_raid_level">支持的RAID级别</string>
+    <string name="hardware_storage_label_mode">模式</string>
+    <string name="hardware_storage_label_configure_version">配置版本</string>
+    <string name="hardware_storage_label_memory_size_MB">内存大小</string>
+    <string name="hardware_storage_label_speed">接口速度</string>
+    <string name="hardware_storage_label_sas_addr">SAS地址</string>
+    <string name="hardware_storage_label_stripe_range">支持的带条大小范围</string>
+    <string name="hardware_storage_label_cache_pinned">Cache Pinned状态</string>
+    <string name="hardware_storage_label_maintain_pd_fail_history">物理盘故障记忆</string>
+    <string name="hardware_storage_label_copy_back_state">回拷</string>
+    <string name="hardware_storage_label_smart_copy_back_state">SMART错误时回拷</string>
+    <string name="hardware_storage_label_JOBD_state">JBOD模式</string>
+    <string name="hardware_storage_label_bbu">BBU</string>
+    <string name="hardware_storage_label_bbu_name">BBU名称</string>
+    <string name="hardware_storage_label_bbu_state">BBU状态</string>
+
+    <string name="hardware_storage_label_volumes">逻辑盘列表</string>
+    <string name="hardware_storage_label_disk">物理盘列表</string>
+
+    <string name="storage_only_support_raid">注意: 当前版本只支持RAID卡存储</string>
+    <string name="drive_label_protocol">接口类型</string>
+    <string name="drive_label_manufacturer">厂商</string>
+    <string name="drive_label_model">型号</string>
+    <string name="drive_label_sn">序列号</string>
+    <string name="drive_label_revision">固件版本</string>
+    <string name="drive_label_media">介质类型</string>
+    <string name="drive_label_temperature">温度</string>
+    <string name="drive_label_fw_status">固件状态</string>
+    <string name="drive_label_sas0">SAS地址(0)</string>
+    <string name="drive_label_sas1">SAS地址(1)</string>
+    <string name="drive_label_capacity">容量</string>
+    <string name="drive_label_capable_speed_gbs">支持的速率</string>
+    <string name="drive_label_negotiated_speed_gbs">协商速率</string>
+    <string name="drive_label_power_state">电源状态</string>
+    <string name="drive_label_hotspare_type">热备状态</string>
+    <string name="drive_label_rebuild_state">重构状态</string>
+    <string name="drive_label_patrol_state">巡检状态</string>
+    <string name="drive_label_indicator_led">定位状态</string>
+    <string name="drive_label_power_on_hours">累计通电时间</string>
+
+    <!-- 重构状态 -->
+    <string name="drive_rebuild_state_done_or_not_rebuilt">已停止</string>
+    <string name="drive_rebuild_state_building">正在重构</string>
+
+    <!-- 重构状态 -->
+    <string name="drive_patroll_state_done_or_not_patrolled">已停止</string>
+    <string name="drive_patroll_state_patrolling">正在巡检</string>
+
+    <!-- 热备状态 -->
+    <string name="drive_hotspare_none">无</string>
+    <string name="drive_hotspare_global">全局</string>
+    <string name="drive_hotspare_dedicated">局部</string>
+
+    <!-- 定位状态 -->
+    <string name="drive_indicator_led_off">关闭</string>
+    <string name="drive_indicator_led_blinking">开启</string>
+
+    <string name="logical_label_volume_name">名称</string>
+    <string name="logical_label_state">状态</string>
+    <string name="logical_label_raid_level">RAID级别</string>
+    <string name="logical_label_capacity">容量</string>
+    <string name="logical_label_strip_size">条带大小</string>
+    <string name="logical_label_sscd_caching">SSCD功能</string>
+    <string name="logical_label_default_read_policy">默认读策略</string>
+    <string name="logical_label_current_read_policy">当前读策略</string>
+    <string name="logical_label_default_write_policy">默认写策略</string>
+    <string name="logical_label_current_write_policy">当前写策略</string>
+    <string name="logical_label_default_io_policy">默认IO策略</string>
+    <string name="logical_label_current_io_policy">当前IO策略</string>
+    <string name="logical_label_disk_cache_policy">物理盘缓存状态</string>
+    <string name="logical_label_access_policy">访问策略</string>
+    <string name="logical_label_init_state">初始化类型</string>
+    <string name="logical_label_bgi_enabled">后台初始化</string>
+    <string name="logical_label_l2_cache">用于二级缓存</string>
+    <string name="logical_label_consistency_check">一致性校验</string>
+    <string name="logical_label_boot_disk">启动盘</string>
+
+    <!--  InitializationMode  -->
+    <string name="logical_drive_im_UnInit">No Init</string>
+    <string name="logical_drive_im_QuickInit">Quick Init</string>
+    <string name="logical_drive_im_FullInit">Full Init</string>
+
+    <!-- logic drive state -->
+    <string name="logical_drive_state_enabled">Optimal</string>
+    <string name="logical_drive_state_offline">Offline</string>
+    <string name="logical_drive_state_degraded">Degraded</string>
+
+
+    <!-- //Hardware end //-->
+
+    <!-- Realtime state start //-->
+    <string name="rs_section_temperature">实时温度</string>
+    <string name="rs_section_health_state">健康状态</string>
+    <string name="rs_section_power_consumption">功耗情况</string>
+
+    <string name="rs_label_cpu">CPU</string>
+    <string name="rs_label_mainboard">主板</string>
+    <string name="rs_label_fan">风扇</string>
+    <string name="rs_label_power">电源</string>
+    <string name="rs_label_drive">硬盘</string>
+    <string name="rs_label_memory">内存</string>
+    <string name="rs_label_temperature">温度</string>
+    <string name="rs_label_power_consumption">整机功率</string>
+    <!-- Realtime state end //-->
+
+    <!-- // Location start // -->
+    <string name="loc_setup_location_label">设备位置</string>
+    <string name="loc_setup_location_input_hint">请填写设备的具体位置以便定位设备</string>
+    <string name="loc_setup_success">设备位置已更新</string>
+    <string name="loc_setup_msg_illegal_location">位置输入格式有误</string>
+    <!--<string name="loc_setup_location_format_hint">由0～64位的数字、字母以及以下特殊字符 &#32;&#96;&#126;&#33;&#64;&#35;&#36;&#37;&#94;&#38;&#42;&#40;&#41;&#45;&#95;&#61;&#43;&#92;&#124;&#91;&#123;&#125;&#93;&#59;&#58;&#39;&#34;&#44;&#60;&#46;&#62;&#47;&#63; 组成。</string>-->
+    <string name="loc_setup_location_format_hint"><![CDATA[由0～64位的数字、字母以及以下特殊字符 `~!@#$%^&*()-_=+\\|[{}];:\'\",<.>/? 组成。]]></string>
+    <!-- // Location end // -->
+
+    <!-- // 功耗信息 start // -->
+    <string name="pc_label_power_consumption">功耗信息</string>
+    <string name="pc_value_not_support">暂不支持</string>
+    <string name="pc_label_track_start_time">统计开始时间</string>
+    <string name="pc_label_consumed_watts">当前功率</string>
+    <string name="pc_label_avg_consumed_watts">系统平均功率</string>
+    <string name="pc_label_total_consumed_watts">系统累计功耗电量</string>
+    <string name="pc_label_max_consumed_watts">系统峰值功率</string>
+    <string name="pc_label_max_consumed_on">峰值产生时间</string>
+    <string name="pc_label_cpu_consumed_watts">CPU当前功耗</string>
+    <string name="pc_label_memory_consumed_watts">内存当前功耗</string>
+    <string name="pc_recount_success">操作成功，数据已清零</string>
+    <!-- // 功耗信息 end // -->
+
+    <!-- // 启动设置 start // -->
+    <string name="bs_tab_boot_override">启动介质</string>
+    <string name="bs_tab_boot_mode">启动模式</string>
+    <string name="bs_boot_override_none">未设置</string>
+    <string name="bs_boot_override_pxe">PXE</string>
+    <string name="bs_boot_override_floppy">软驱/可插拔移动设备</string>
+    <string name="bs_boot_override_cd">光驱</string>
+    <string name="bs_boot_override_hdd">磁盘</string>
+    <string name="bs_boot_override_bios_setup">BIOS设置</string>
+    <string name="bs_label_override_enabled">永久生效</string>
+    <string name="bs_hint_boot_mode_update_not_support">当前设备不支持修改启动模式</string>
+    <!-- // 启动设置 end // -->
+
+    <!-- Power Toggle start -->
+    <string name="pt_label_power_buttons">电源开关</string>
+    <string name="pt_label_power_on">上电</string>
+    <string name="pt_label_power_off">正常下电</string>
+    <string name="pt_label_force_off">强制下电</string>
+    <string name="pt_label_force_recycle">强制下电再上电</string>
+    <string name="pt_label_force_restart">强制重启</string>
+    <string name="pt_label_NMI">NMI</string>
+    <string name="shield_power_toggle">屏蔽电源按钮</string>
+    <string name="pt_label_safe_power_off_time">下电时限</string>
+    <string name="pt_power_off_timeout_section_name">设置下电时限</string>
+    <string name="pt_label_timeout_enable">开启下电时限</string>
+    <string name="pt_label_timeout">超时时长</string>
+    <string name="pt_hint_safe_power_off_timeout">取值范围: 10 - 6000, 默认值为 600, 单位秒</string>
+    <string name="pt_msg_illegal_timeout">下电时限的取值范围为10 - 6000</string>
+    <string name="pt_prompt_NMI">NMI仅用于内部调测，使用时需要操作系统中有对应的NMI中断处理程序，否则可能引起系统崩溃。请谨慎使用。</string>
+    <!-- Power Toggle end -->
+
+    <!-- Indicator LED start -->
+    <string name="indicator_section_led">定位灯</string>
+    <string name="indicator_label_led">定位灯</string>
+    <string name="indicator_label_blinking">闪烁</string>
+    <string name="indicator_state_lit">已点亮</string>
+    <string name="indicator_state_off">已关闭</string>
+    <string name="indicator_state_blinking">闪烁</string>
+    <string name="indicator_state_unknown">未知</string>
+    <!-- // Indicator LED end  // -->
+
+    <!-- Report start -->
+    <string name="report_label_select_report_items">选择报告项</string>
+    <string name="report_label_system_overview">系统信息</string>
+    <string name="report_label_cpu_info">CPU</string>
+    <string name="report_label_memory_info">内存</string>
+    <string name="report_label_storage">存储</string>
+    <string name="report_label_firmware_info">固件信息</string>
+    <string name="report_label_network_info">网络</string>
+    <string name="report_label_health_info">实时状态</string>
+    <string name="report_label_share_file_type">选择分享文件类型</string>
+    <string name="generate_report">生成报告</string>
+    <string name="report_type_image">图片</string>
+    <string name="report_type_pdf">PDF</string>
+    <!-- // Report end //-->
+
+    <!-- Firmware start -->
+    <!--
+    <string name="main_ibmc">iBMC主分区镜像版本</string>
+    <string name="backup_ibmc">iBMC备分区镜像版本</string>
+    <string name="bios_version">BIOS版本</string>
+    <string name="cpld_version">CPLD版本</string>
+    -->
+    <string name="firmware_button_rollback">iBMC主备分区镜像倒换</string>
+    <string name="firmware_button_reset">重启iBMC</string>
+    <string name="firmware_prompt_reset">确认要重启iBMC吗?</string>
+    <string name="firmware_prompt_rollback">确认要倒换主备分区镜像吗?</string>
+    <!-- Firmware end -->
+
+    <!-- report -->
+    <string name="display_report_share_title">分享设备报告详情</string>
+    <string name="display_report_error_failed_create_file">无法生成报告文件</string>
+
+    <!-- Collection start -->
+    <string name="select_path">选择存储目录</string>
+    <string name="collect_label_path">存储目录</string>
+    <string name="collect_download_path">存储卡/Download/com.huawei.smart.server/</string>
+    <string name="folder">目录</string>
+    <string name="start_collect">开始收集</string>
+    <string name="default_path">/sdcard/Download</string>
+    <string name="collect_prompt_delete_file">确认删除该文件?</string>
+    <string name="collect_download_file_list">一键收集文件列表</string>
+    <!-- Collection end -->
+
+    <!-- Set lock screen password start -->
+    <string name="setup_passcode_title">设置应用密码</string>
+    <string name="setup_passcode_success">密码设置成功</string>
+    <string name="disable_passcode_success">密码保护已关闭</string>
+    <string name="passcode_wrong">两次密码输入不一致, 请重新输入</string>
+    <string name="enter_passcode">请输入密码</string>
+    <string name="enter_new_passcode">请输入新密码</string>
+    <string name="enter_old_passcode">请输入旧的密码，以验证身份</string>
+    <string name="reenter_passcode">请再次填写以确认</string>
+    <string name="change_passcode">更改密码</string>
+    <string name="change_passcode_success">密码修改成功</string>
+    <string name="keyboard_clear">清除</string>
+    <string name="keyboard_backspace">删除</string>
+    <string name="lock_label_initial_passcode">请创建应用密码</string>
+    <string name="lock_label_initial_passcode_confirm">请再次输入应用密码</string>
+
+
+    <string name="unlock_title">验证身份</string>
+    <string name="change_passcode_title">修改密码</string>
+    <string name="enable_passcode_title">开启应用锁</string>
+    <string name="disable_passcode_title">关闭应用锁</string>
+    <string name="unlock_error">密码输入错误，请重新输入</string>
+
+    <string name="security_label_passcode_protect">密码保护</string>
+    <string name="security_label_fingerprint_protect">指纹解锁</string>
+    <string name="security_tip_put_finger_on">请将手指放在指纹识别器上</string>
+    <string name="security_label_fingerprint_unlock">验证指纹解锁</string>
+    <string name="security_label_fingerprint_unlock_failed">验证失败，请再试一次。</string>
+    <string name="security_label_fingerprint_unlock_retry">验证指纹失败</string>
+    <string name="security_label_fingerprint_locked">指纹验证锁定，暂时无法使用。</string>
+    <string name="security_msg_fingerprint_enabled">指纹解锁已开启</string>
+    <string name="security_msg_fingerprint_disabled">指纹解锁已关闭</string>
+    <string name="security_msg_fingerprint_enable_failed">操作失败，请确认指纹硬件可用并已录入指纹</string>
+
+    <string name="security_label_set_app_password">设置应用密码</string>
+    <!-- Set lock screen password end -->
+
+    <!-- Discover start -->
+    <string name="scan_one_d_code">扫描设备</string>
+    <string name="scan_prompt_put_image_in_place">将一维码放到框内即可</string>
+    <string name="scan_action_cancel">扫码取消</string>
+    <string name="scan_action_success">扫描成功</string>
+    <string name="scan_device_is_not_available">该设备还未添加</string>
+    <!-- Discover end -->
+
+    <!-- generate -->
+    <string name="generate_bmc_need_upgrade">当前设备不支持导出内存报告，请升级BMC版本</string>
+
+
+
+    <!-- collection start -->
+    <string name="collection_msg_long_time_task">一键收集需要耗费数分钟的时间，请耐心等待</string>
+    <string name="collection_msg_collecting">需要耗费数分钟时间，请耐心等待</string>
+    <string name="collection_msg_downloading">下载中...</string>
+    <string name="collection_msg_download_to">文件已下载到：</string>
+    <string name="collection_msg_download_failed">文件下载失败</string>
+    <string name="collection_msg_collect_failed">一键收集任务失败</string>
+    <string name="he_label_status">状态:</string>
+
+    <!-- collection end -->
+
+    <!-- upgrade -->
+    <string name="msg_no_write_storage_permission">访问存储空间权限受限</string>
+    <string name="button_later">稍后再说</string>
+    <string name="button_upgrade">现在下载</string>
+    <string name="upgrade_updating">应用更新中</string>
+    <string name="upgrade_app_is_latest">应用已经是最新版本</string>
+    <string name="upgrade_app_download_start">开始下载</string>
+    <string name="upgrade_app_download_connect_to_server">正在连接服务器</string>
+    <string name="upgrade_app_download_percent_prefix">正在下载：</string>
+    <string name="upgrade_app_download_finished">下载完成，请点击安装</string>
+    <string name="upgrade_app_download_failed">更新新版本出错，</string>
+    <!-- upgrade end -->
+
+    <!-- feedback -->
+    <string name="how_to_use_app_password">如何使用APP的密码保护</string>
+    <string name="how_to_add_device">如何添加设备</string>
+    <string name="how_to_use_qr_code">如何使用一维码扫描设备</string>
+    <string name="how_to_use_manage_functions">如何使用设备的各项管理功能</string>
+    <string name="notes">一些注意事项</string>
+    <string name="send_feedback_button">意见反馈</string>
+
+    <string name="feedback_label_submit_feedback">意见反馈</string>
+    <string name="feedback_label_name">您的称呼</string>
+    <string name="feedback_label_email">您的邮箱</string>
+    <string name="feedback_hint_feedback">请描述您遇到的问题或建议以便我们提供更好的帮助，谢谢</string>
+    <string name="feedback_v_name_is_required">请填写您的称呼</string>
+    <string name="feedback_v_email_is_required">请填写正确的邮箱地址</string>
+    <string name="feedback_v_content_is_required">请填写反馈内容或建议</string>
+    <string name="feedback_v_content_too_long">反馈内容或建议不能超过256个字符</string>
+    <string name="feedback_v_name_too_long">称呼不能超过48个字符</string>
+    <string name="feedback_v_email_too_long">邮箱不能超过48个字符</string>
+
+    <string name="feedback_label_log">上传日志（可选）</string>
+    <string name="feedback_label_screenshot">上传截图（可选）</string>
+    <string name="feedback_hint_log">为更好解决您的问题，建议您选择发送应用日志</string>
+    <string name="feedback_hint_privacy">隐私声明：1、您输入的个人邮箱信息，仅用来对反馈意见的回复，不会用来做其他事情。2、应用日志中不包含任何有关您个人隐私的信息。</string>
+
+    <!-- feedback -->
+
+    <!-- app version introduction -->
+    <string name="app_version_1">v1.0.0</string>
+    <!-- app version introduction -->
+</resources>

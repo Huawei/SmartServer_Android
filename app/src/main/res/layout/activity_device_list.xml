@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!-- Title Bar -->
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        style="@style/TitleBar">
+
+        <LinearLayout
+            android:id="@+id/title_bar_title"
+            style="@style/TitleBar.Title">
+
+            <TextView
+                android:id="@+id/title_bar_title_txt"
+                style="@style/TitleBar.Title_Text"
+                android:text="@string/title_device_list" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TitleBar.ActionButton">
+
+            <ImageView
+                android:id="@+id/title_bar_scan_icon"
+                style="@style/TitleBar.ActionButton_Icon"
+                android:paddingEnd="8dp"
+                android:src="@mipmap/ic_nav_scan" />
+
+            <ImageView
+                android:id="@+id/title_bar_action_icon"
+                style="@style/TitleBar.ActionButton_Icon"
+                android:src="@mipmap/ic_plus" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!-- // Title Bar End // -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/search"
+            style="@style/SearchInputText"
+            android:drawableEnd="@mipmap/ic_clear" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/colorDivider" />
+
+        <com.huawei.smart.server.widget.EnhanceRecyclerView
+            android:id="@+id/deviceList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center" />
+
+        <include
+            layout="@layout/widget_empty_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

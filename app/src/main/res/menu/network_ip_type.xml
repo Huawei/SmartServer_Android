@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/network_ip_type_ipv4"
+        android:title="@string/ns_network_ip_version_ipv4" />
+    <item
+        android:id="@+id/network_ip_type_ipv6"
+        android:title="@string/ns_network_ip_version_ipv6" />
+    <item
+        android:id="@+id/network_ip_type_ipv4_ipv6"
+        android:title="@string/ns_network_ip_version_ipv4_and_ipv6"
+        android:checked="true"/>
+</menu>

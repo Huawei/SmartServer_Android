@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <com.huawei.smart.server.widget.EnhanceRecyclerView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="none"
+        tools:listitem="@layout/list_feedback_item"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/layout_scroll_view_mb"
+        />
+
+    <Button
+        android:id="@+id/add_feedback"
+        style="@style/Button_Confirm"
+        android:text="@string/send_feedback_button"
+        android:layout_marginBottom="@dimen/margin_between_widget_sides"/>
+</LinearLayout>

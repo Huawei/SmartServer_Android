@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    style="@style/TitleBar">
+
+    <LinearLayout
+        android:id="@+id/title_bar_go_back"
+        style="@style/TitleBar.BackButton">
+
+        <ImageView
+            android:id="@+id/title_bar_go_back_icon"
+            style="@style/TitleBar.BackButton_Icon" />
+
+        <TextView
+            android:id="@+id/title_bar_go_back_txt"
+            style="@style/TitleBar.BackButton_Text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_bar_title"
+        style="@style/TitleBar.Title">
+
+        <TextView
+            android:id="@+id/title_bar_title_txt"
+            style="@style/TitleBar.Title_Text"
+            android:text="@string/title_feedback" />
+    </LinearLayout>
+
+</RelativeLayout>

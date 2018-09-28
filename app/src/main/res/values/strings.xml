@@ -1,0 +1,725 @@
+﻿<resources>
+    <string name="app_name">SmartServer</string>
+    <string name="app_full_name">SmartServer Mobile</string>
+
+    <!-- // common start // -->
+    <string name="search_input_hint">Search</string>
+    <string name="label_list_no_record">No record available.</string>
+    <string name="label_not_support">Feature is not support for this device.</string>
+    <string name="label_default_txt">label</string>
+    <string name="label_value_txt">-</string>
+    <string name="msg_loading">Loading ...</string>
+    <string name="msg_action_success">Operation successful</string>
+    <string name="msg_action_failed">Operation failed</string>
+    <string name="msg_auth_failed_title">Authentication failed</string>
+    <string name="msg_auth_illegal_account">Check whether the user name and password are correct or whether the account status is normal.</string>
+    <string name="msg_auth_too_many_session">The number of concurrent login users exceeds the limit. </string>
+    <string name="msg_not_implement">This feature is not supported on current device</string>
+    <string name="msg_access_api_failed">Request failed. </string>
+    <string name="msg_access_api_timeout">Request Timeout. </string>
+    <string name="msg_app_exception">Application exception.</string>
+
+    <string name="resource_state_enabled">Enable</string>
+    <string name="resource_state_disabled">Disable</string>
+    <string name="resource_state_absent">Absent</string>
+    <string name="state_unknown">Unknown</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Enable">Enable</string>
+    <string name="Disable">Disable</string>
+    <string name="Stopped">Stopped</string>
+
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="turn_off_flashlight">Turn off Flashlight</string>
+
+    <string name="no_browser_app_found">Failed to find the browser. </string>
+    <string name="please_install_a_browser_app">Install the browser.</string>
+    <!-- // common edn // -->
+
+    <string name="md_up_label">Up</string>
+    <string name="md_back_label">Back</string>
+    <string name="md_cancel_label">Cancel</string>
+    <string name="md_choose_label">Choose</string>
+    <string name="md_custom_label">Custom</string>
+    <string name="md_done_label">Done</string>
+    <string name="md_error_label">Error</string>
+    <string name="md_presets_label">Presets</string>
+    <string name="md_storage_perm_error">Your app has not been granted the READ_EXTERNAL_STORAGE permission.</string>
+    <string name="md_new_folder">New Folder</string>
+
+
+    <!-- // title start // -->
+    <string name="title_go_back_txt">Back</string>
+    <string name="title_device_list">Devices</string>
+    <string name="title_add_device">Add Device</string>
+    <string name="title_edit_device">Edit Device</string>
+    <string name="title_display_report">Details</string>
+    <string name="title_discovery">Discover</string>
+    <string name="title_my_profile">Me</string>
+    <string name="title_about_us">About</string>
+    <string name="title_feedback">Help and Feedback</string>
+    <string name="title_submit_feedback">Feedback</string>
+    <string name="title_network_port">Network Port List</string>
+    <string name="title_drive">Drive List</string>
+    <string name="title_volumes">Logical Drive List</string>
+    <string name="title_security">Security</string>
+    <string name="title_policy">User Protocol</string>
+    <!-- // title end // -->
+
+    <!-- // menu start // -->
+    <string name="menu_about_me">Me</string>
+    <string name="menu_devices">Devices</string>
+    <string name="menu_find">Discover</string>
+    <!-- // menu end // -->
+
+    <!-- // button start // -->
+    <string name="button_done">OK</string>
+    <string name="button_share">Share</string>
+    <string name="button_sure">Yes</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_finish">Done</string>
+    <string name="button_add">Add</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_recount">Refresh</string>
+    <!-- // button end // -->
+
+    <!-- // device list starts // -->
+    <string name="ds_dialog_input_device_pwd_hint">Enter the device password. </string>
+    <string name="ds_label_no_search_history">No historical records available. </string>
+    <string name="ds_label_no_device">No data available. </string>
+    <string name="ds_label_recent_history">Search History</string>
+    <!-- // device list end // -->
+
+    <!-- // add device starts // -->
+    <string name="ad_default_device_name">Device</string>
+    <string name="ad_as_connect_type_title">Select the access mode. </string>
+
+    <string name="ad_section_title_device">Device Info</string>
+    <string name="ad_section_title_authentication">Authentication Info</string>
+
+    <string name="ad_connect_type_network">Network</string>
+    <string name="ad_connect_type_mobile">Cellular (not supported)</string>
+    <string name="ad_connect_type_bluetooth">Bluetooth (not supported)</string>
+
+    <string name="ad_label_connect_type">Access Mode</string>
+    <string name="ad_label_hostname">Host</string>
+    <string name="ad_hint_hostname">Domain name or IP address</string>
+    <string name="ad_label_port">Port</string>
+    <string name="ad_hint_port">Port to be accessed</string>
+    <string name="ad_label_alias">Alias</string>
+
+    <string name="ad_label_username">User</string>
+    <string name="ad_hint_username">User name</string>
+    <string name="ad_label_password">Password</string>
+    <string name="ad_hint_password">Password</string>
+    <string name="ad_label_remember_pwd">Remember Password</string>
+    <string name="ad_label_domain">Domain</string>
+
+    <string name="ad_connect_type_is_empty">Select the access mode. </string>
+    <string name="ad_hostname_is_empty">The IP address/host name cannot be empty. </string>
+    <string name="ad_hostname_is_illegal">Incorrect IP address/host name format. </string>
+    <string name="ad_hostname_exists">A device that has the same IP address or host name already exists</string>
+    <string name="ad_port_is_empty">The port cannot be empty. </string>
+    <string name="ad_port_is_illegal">Port must be a number from 0 to 65535. </string>
+    <string name="ad_username_is_empty">The user name cannot be empty. </string>
+    <string name="ad_password_is_empty">The password cannot be empty. </string>
+    <string name="ad_failed_to_add_device">Failed to add the device. </string>
+    <!--addPowerSupplies add device ends // -->
+
+    <!-- // device summary start //-->
+    <string name="ds_label_basic_info">System Info</string>
+    <string name="ds_label_model">Product Model</string>
+    <string name="ds_label_ipv4">IPv4 Address</string>
+    <string name="ds_label_ipv6">IPv6 Address</string>
+    <string name="ds_label_location">Device Location</string>
+    <string name="ds_label_health_state">Health Status</string>
+    <string name="ds_label_power_state">Power Status</string>
+    <string name="ds_label_serial_number">Product SN</string>
+    <string name="ds_label_asset_tag">Asset Tag</string>
+    <string name="ds_label_bmc_version">BMC Version</string>
+    <string name="ds_label_bios_version">BIOS Version</string>
+    <string name="ds_label_cpu">CPU Info</string>
+    <string name="ds_label_memory">Memory Info</string>
+    <string name="ds_label_menu_health">Active Alarms</string>
+    <string name="ds_label_menu_system_log">System Events</string>
+    <string name="ds_label_menu_network_setting">Network</string>
+    <string name="ds_label_menu_hardware">Hardware</string>
+    <string name="ds_label_menu_realtime_state">Dashboard</string>
+    <string name="ds_label_menu_location">Location</string>
+    <string name="ds_label_menu_power_consumption">Power Meter</string>
+    <string name="ds_label_menu_boot_setting">Boot Settings</string>
+    <string name="ds_label_menu_power">Power Control</string>
+    <string name="ds_label_menu_expend">More</string>
+    <string name="ds_label_menu_indicator_LED">UID</string>
+    <string name="ds_label_menu_firmware">Firmware</string>
+    <string name="ds_label_menu_report">Report</string>
+    <string name="ds_label_menu_collector">Collection</string>
+    <string name="ds_label_menu_folder">Collapse</string>
+    <string name="ds_action_switch_device">Switch Device</string>
+    <string name="ds_label_no_switchable_device">No device available.</string>
+
+    <string name="ds_power_state_on">Powered on</string>
+    <string name="ds_power_state_off">Powered off</string>
+    <string name="ds_health_state_ok">Normal</string>
+    <string name="ds_health_state_warning">Warning</string>
+    <string name="ds_health_state_critical">Critical</string>
+    <!-- // device summary end //-->
+
+    <!-- // my profile strat//-->
+    <string name="profile_push_notification">Notifications</string>
+    <string name="profile_send_feedback">Help and Feedback</string>
+    <string name="profile_about_us">About</string>
+    <string name="profile_security">Security Settings</string>
+    <string name="profile_theme">Theme</string>
+    <string name="profile_select_theme">Select Theme</string>
+    <string name="profile_lang">Language</string>
+    <string name="profile_select_lang">Select Language</string>
+
+    <string name="lang_zh">中文</string>
+    <string name="lang_en">English</string>
+    <!-- // my profile end//-->
+
+    <!-- // health event start//-->
+    <string name="he_label_event_desc">Description:</string>
+    <string name="he_label_suggestion">Handling Suggestion:</string>
+    <string name="he_label_event_code">Event Code:</string>
+    <string name="he_label_event_on">Generated:</string>
+    <string name="he_label_status">Status:</string>
+    <string name="he_filter_all">All</string>
+    <string name="he_filter_critical">Critical</string>
+    <string name="he_filter_warning">Major</string>
+    <string name="he_filter_ok">Informational</string>
+    <!-- // health event end//-->
+
+    <!-- System log start//-->
+    <string name="system_log_level">Log Level</string>
+    <string name="system_log_subject">Subject</string>
+    <string name="system_log_create_date">Generation Time</string>
+    <string name="system_log_select_level_title">Select Log Level </string>
+    <string name="system_log_select_level_critical">Critical</string>
+    <string name="system_log_select_level_warning">Warning</string>
+    <string name="system_log_select_level_ok">OK</string>
+    <string name="system_log_select_type_title">Select Subject</string>
+    <string name="system_log_select_type_base">Base Plane</string>
+    <string name="system_log_select_type_bmc">BMC</string>
+    <string name="system_log_select_type_button">Button</string>
+    <string name="system_log_select_create_date_title">Select Generation Time</string>
+    <string name="system_log_select_create_date_today">Today</string>
+    <string name="system_log_select_create_date_seven_days">Last 7 days</string>
+    <string name="system_log_select_create_date_one_month">Last 30 days</string>
+    <string name="system_log_select_create_date_range">Special Date Range</string>
+    <string name="system_log_date_range_from">Start Date</string>
+    <string name="system_log_date_range_to">End Date</string>
+    <string name="system_log_select_all">All</string>
+
+    <string name="system_log_label_event_desc">Description:</string>
+    <string name="system_log_label_suggestion">Handling Suggestion:</string>
+    <string name="system_log_label_event_code">Event Code:</string>
+    <string name="system_log_label_status">Status:</string>
+    <string name="system_log_label_produced_on">Produced On:</string>
+
+    <string name="system_log_status_asserted">Asserted</string>
+    <string name="system_log_status_deasserted">Deasserted</string>
+
+    <string name="system_log_prompt_clear">Are you sure you want to clear system log?</string>
+    <!-- System log end//-->
+
+    <!-- // network setting start //-->
+    <string name="ns_title">Network Settings</string>
+    <string name="ns_tab_hostname">Host Name</string>
+    <string name="ns_tab_port">Port</string>
+    <string name="ns_tab_network">Network</string>
+    <string name="ns_tab_vlan">VLAN</string>
+    <string name="ns_tab_time_zone">Time Zone</string>
+
+    <string name="ns_hostname_section_name">Set iBMC Host Name</string>
+    <string name="ns_hostname_label_hostname">Host Name</string>
+    <string name="ns_network_msg_illegal_hostname">Incorrect host name.</string>
+    <string name="ns_network_hint_hostname">Enter a string of 1 to 64 characters, allowing letters, digits, and \'-\'. The host name cannot start or end with \'-\'.</string>
+
+    <string name="ns_port_label_port_type">Network Port Mode</string>
+    <string name="ns_port_section_port_selection">Select Port</string>
+    <string name="ns_port_hint_lose_conn">Changing the IP address of the management network port will cause network disconnection. Change the IP address only when necessary.</string>
+
+    <string name="ns_port_port_type_dedicated">Dedicated port</string>
+    <string name="ns_port_port_type_aggregation">Aggregated port</string>
+    <string name="ns_port_port_type_LOM">LOM port</string>
+    <string name="ns_port_port_type_LOM2">LOM port 2</string>
+    <string name="ns_port_port_type_External_PCIe">PCIe expansion port</string>
+
+    <string name="ns_port_port_type_dedicated_prefix">eth</string>
+    <string name="ns_port_port_type_aggregation_prefix">eth</string>
+    <string name="ns_port_port_type_LOM_prefix">Port</string>
+    <string name="ns_port_port_type_LOM2_prefix">Port</string>
+    <string name="ns_port_port_type_External_PCIe_prefix">PCIe</string>
+
+    <string name="ns_port_title_port_mode_selection">Select Network Port Mode</string>
+    <string name="ns_port_port_mode_fixed">Fixed</string>
+    <string name="ns_port_port_mode_automatic">Auto</string>
+    <string name="ns_port_prompt_update_port">Modifying network port may cause link disconnection. Are you sure you want to save the settings?</string>
+    <!-- // ethernet interface end //-->
+
+    <!-- network start //-->
+    <string name="ns_network_ip_version">IP Version</string>
+    <string name="ns_network_ip_version_setting">IP Version Settings</string>
+    <string name="ns_network_ip_version_selection_title">Select IP Version</string>
+    <string name="ns_network_ip_version_ipv4">IPv4</string>
+    <string name="ns_network_ip_version_ipv6">IPv6</string>
+    <string name="ns_network_ip_version_ipv4_and_ipv6">IPv4+IPv6</string>
+
+    <string name="ns_network_dns_addr_origin_selection_title">Select DNS Mode</string>
+    <string name="ns_network_dns_addr_origin_static">Manually set DNS</string>
+    <string name="ns_network_dns_addr_origin_ipv4">Use IPv4 DNS</string>
+    <string name="ns_network_dns_addr_origin_ipv6">Use IPv6 DNS</string>
+
+    <string name="ns_network_label_ipv4">IPv4 Settings</string>
+    <string name="ns_network_label_ipv6">IPv6 Settings</string>
+    <string name="ns_network_label_dhcp">Auto</string>
+    <string name="ns_network_label_ip_address">IP Address</string>
+    <string name="ns_network_label_gateway">Default Gateway</string>
+    <string name="ns_network_label_subnet_mask">Subnet Mask</string>
+    <string name="ns_network_label_prefix_len">Prefix Length</string>
+    <string name="ns_network_label_link_local_address">Link Local Address</string>
+    <string name="ns_network_label_mac">MAC Address</string>
+    <string name="ns_network_label_DNS">DNS</string>
+    <string name="ns_network_label_dns_setup_method">DNS Mode</string>
+    <string name="ns_network_label_domain">Domain</string>
+    <string name="ns_network_label_primary_DNS">Preferred DNS</string>
+    <string name="ns_network_label_alternative_DNS">Alternate DNS</string>
+
+    <string name="ns_network_error_ip_version_required">Select the IP version. </string>
+    <string name="ns_network_error_ipv4_addr_required">Enter an IPv4 address. </string>
+    <string name="ns_network_error_ipv4_addr_illegal">Incorrect format of the IPv4 address. </string>
+    <string name="ns_network_error_ipv4_mask_required">Enter an IPv4 subnet mask. </string>
+    <string name="ns_network_error_ipv4_mask_illegal">Incorrect format of the IPv4 subnet mask. </string>
+    <string name="ns_network_error_ipv4_gateway_required">Enter an IPv4 gateway address. </string>
+    <string name="ns_network_error_ipv4_gateway_illegal">Incorrect format of the IPv4 gateway address. </string>
+
+    <string name="ns_network_error_ipv6_addr_required">Enter an IPv6 address.</string>
+    <string name="ns_network_error_ipv6_addr_illegal">Incorrect format of the IPv6 address.</string>
+    <string name="ns_network_error_ipv6_prefix_required">Enter the IPv6 prefix length. </string>
+    <string name="ns_network_error_ipv6_prefix_illegal">The IPv6 prefix length must be an integer from 0 to 128. </string>
+    <string name="ns_network_error_ipv6_gateway_required">Enter an IPv6 gateway address. </string>
+    <string name="ns_network_error_ipv6_gateway_illegal">Incorrect format of the IPv6 gateway address. </string>
+
+    <string name="ns_network_error_primary_dns_required">Enter an address for the preferred DNS. </string>
+    <string name="ns_network_error_domain_illegal">Incorrect format of the domain address. </string>
+    <string name="ns_network_error_primary_dns_illegal">Incorrect format of the preferred DNS address. </string>
+    <string name="ns_network_error_alternative_dns_required">Enter an address for the alternate DNS.</string>
+    <string name="ns_network_error_alternative_dns_illegal">Incorrect format of the alternate DNS address. </string>
+
+    <string name="ns_network_prompt_update_ip_version">Modifying IP version settings may cause link disconnection. Are you sure you want to save the settings?</string>
+    <string name="ns_network_prompt_update_ipv4_setting">Modifying IPv4 settings may cause link disconnection. Are you sure you want to save the settings? </string>
+    <string name="ns_network_prompt_update_ipv6_setting">Modifying IPv6 settings may cause link disconnection. Are you sure you want to save the settings?</string>
+    <string name="ns_network_prompt_update_dns_setting">Modifying DNS settings may cause link disconnection. Are you sure you want to save the settings?</string>
+
+    <!-- // VLAN start // -->
+    <string name="ns_vlan_label_setting">VLAN Settings</string>
+    <string name="ns_vlan_label_vlan">VLAN</string>
+    <string name="ns_vlan_label_vlan_id">VLAN ID</string>
+    <string name="ns_vlan_hint_vlan_id">Enter an integer ranging from 1 to 4094. </string>
+    <string name="ns_vlan_illegal_vlan_id">The VLAN ID must be an integer ranging from 1 to 4094. </string>
+    <!-- // VLAN end // -->
+
+    <!-- // Time zone start // -->
+    <string name="ns_time_zone_label_select_zone">Select Area</string>
+    <string name="ns_time_zone_label_zone">Area</string>
+    <string name="ns_time_zone_label_select_timezone">Select Time Zone</string>
+    <string name="ns_time_zone_label_timezone">Time Zone</string>
+    <string name="ns_time_zone_msg_timezone_illegal">Select the time zone. </string>
+    <!-- // Time zone end // -->
+
+    <!-- network setting end //-->
+
+
+
+    <!-- // About us start // -->
+    <string name="about_us_label_version">Device Management v0.1.0</string>
+    <string name="about_us_label_features">Function Overview</string>
+    <string name="about_us_label_update">Version Update</string>
+    <string name="about_us_label_rate">Rate</string>
+    <string name="about_us_label_agreement">User Protocol</string>
+    <!-- // About us start // -->
+
+    <!-- //Hardware start //-->
+    <string name="hardware_tab_memory">Memory</string>
+    <string name="hardware_tab_cpu">CPU</string>
+    <string name="hardware_tab_power">Power Supply</string>
+    <string name="hardware_tab_netcard">NIC</string>
+    <string name="hardware_tab_storage">Storage</string>
+
+    <string name="hardware_state_enabled">Enabled</string>
+    <string name="hardware_status_normal">Normal</string>
+    <string name="hardware_status_in_place">Present</string>
+
+    <string name="hardware_cpu_label_manufacturer">Manufacturer</string>
+    <string name="hardware_cpu_label_model">Model</string>
+    <string name="hardware_cpu_label_processor_id">Processor ID</string>
+    <string name="hardware_cpu_label_speed_MHZ">Frequency</string>
+    <string name="hardware_cpu_label_processor">Processor</string>
+    <string name="hardware_cpu_label_cores_and_threads">Cores/Threads</string>
+    <string name="hardware_cpu_label_L123_cache">L1/L2/L3 Cache</string>
+    <string name="hardware_cpu_label_part_no">BOM Code</string>
+
+    <string name="hardware_memo_label_type">Type: </string>
+    <string name="hardware_memo_label_capacity">Capacity: </string>
+    <string name="hardware_memo_label_speed">Frequency:</string>
+    <string name="hardware_memo_label_width_bit">Bit Width:</string>
+    <string name="hardware_memo_label_rank_count">Rank:</string>
+    <string name="hardware_memo_label_min_voltage">Min Voltage: </string>
+    <string name="hardware_memo_label_manufacturer">Manufacturer:</string>
+    <string name="hardware_memo_label_serial_no">SN:</string>
+    <string name="hardware_memo_label_part_no">BOM Code:</string>
+    <string name="hardware_memo_label_technology">Technology:</string>
+    <string name="hardware_memo_label_position">Location:</string>
+
+    <string name="hardware_power_power_supply_type_ac">AC</string>
+    <string name="hardware_power_power_supply_type_dc">DC</string>
+    <string name="hardware_power_power_supply_type_ac_or_dc">AC/DC</string>
+    <string name="hardware_power_label_manufacturer">Manufacturer:</string>
+    <string name="hardware_power_label_model">Type:</string>
+    <string name="hardware_power_label_serial_no">SN:</string>
+    <string name="hardware_power_label_firmware_version">Firmware Version: </string>
+    <string name="hardware_power_label_capacity_watts">Rated Power:</string>
+    <string name="hardware_power_label_supply_type">Input mode:</string>
+    <string name="hardware_power_label_part_no">BOM Code:</string>
+
+    <string name="hardware_network_adapter_list">NIC</string>
+    <string name="hardware_network_adapter_label_name">Name</string>
+    <string name="hardware_network_adapter_label_manufacturer">Manufacturer</string>
+    <string name="hardware_network_adapter_label_model">Model</string>
+    <string name="hardware_network_adapter_label_chip_manufacturer">Chip Manufacturer</string>
+    <string name="hardware_network_adapter_label_chip_model">Chip Model</string>
+    <string name="hardware_network_adapter_label_position">Location</string>
+    <string name="hardware_network_adapter_label_ports">Network Port List</string>
+
+    <string name="hardware_network_port_label_port_number">Port</string>
+    <string name="hardware_network_port_label_port_type">Medium Type:</string>
+    <string name="hardware_network_port_label_mac_addr">MAC Address:</string>
+    <string name="hardware_network_port_label_link_status">Status:</string>
+    <string name="hardware_network_port_port_type_optical">Optical Port</string>
+    <string name="hardware_network_port_port_type_electrical">Electrical Port</string>
+    <string name="hardware_network_port_link_status_down">Down</string>
+    <string name="hardware_network_port_link_status_up">Up</string>
+
+    <string name="hardware_storage_label_name">Name</string>
+    <string name="hardware_storage_label_model">Type</string>
+    <string name="hardware_storage_label_firmware_version">Firmware Version</string>
+    <string name="hardware_storage_label_support_ext_device">Support Out-of-Band Mgmt</string>
+    <string name="hardware_storage_label_support_raid_level">RAID Level</string>
+    <string name="hardware_storage_label_mode">Mode</string>
+    <string name="hardware_storage_label_configure_version">Version</string>
+    <string name="hardware_storage_label_memory_size_MB">Memory Size</string>
+    <string name="hardware_storage_label_speed">Port Speed</string>
+    <string name="hardware_storage_label_sas_addr">SAS Address</string>
+    <string name="hardware_storage_label_stripe_range">Supported Stripe Range</string>
+    <string name="hardware_storage_label_cache_pinned">Cache Pinned Status</string>
+    <string name="hardware_storage_label_maintain_pd_fail_history">Maintain PD Fail History</string>
+    <string name="hardware_storage_label_copy_back_state">Copyback</string>
+    <string name="hardware_storage_label_smart_copy_back_state">Copyback on SMART Error</string>
+    <string name="hardware_storage_label_JOBD_state">JBOD</string>
+    <string name="hardware_storage_label_bbu">BBU</string>
+    <string name="hardware_storage_label_bbu_name">BBU Name</string>
+    <string name="hardware_storage_label_bbu_state">BBU Status</string>
+
+    <string name="hardware_storage_label_volumes">Logical Drive List</string>
+    <string name="hardware_storage_label_disk">Drive List</string>
+
+    <string name="storage_only_support_raid">Notice: only supports RAID card storage</string>
+    <string name="drive_label_protocol">Interface Type</string>
+    <string name="drive_label_manufacturer">Manufacturer</string>
+    <string name="drive_label_model">Model</string>
+    <string name="drive_label_sn">Serial Number</string>
+    <string name="drive_label_revision">Firmware Version</string>
+    <string name="drive_label_media">Media Type</string>
+    <string name="drive_label_temperature">Temperature</string>
+    <string name="drive_label_fw_status">Firmware State</string>
+    <string name="drive_label_sas0">SAS Address(0)</string>
+    <string name="drive_label_sas1">SAS Address(1)</string>
+    <string name="drive_label_capacity">Capacity</string>
+    <string name="drive_label_capable_speed_gbs">Capable Speed</string>
+    <string name="drive_label_negotiated_speed_gbs">Negotiated Speed</string>
+    <string name="drive_label_power_state">Power State</string>
+    <string name="drive_label_hotspare_type">Hot Spare State</string>
+    <string name="drive_label_rebuild_state">Rebuild Status</string>
+    <string name="drive_label_patrol_state">Patrol Status</string>
+    <string name="drive_label_indicator_led">Location State</string>
+    <string name="drive_label_power_on_hours">Power-On Hours</string>
+
+    <!-- 重构状态 -->
+    <string name="drive_rebuild_state_done_or_not_rebuilt">Stopped</string>
+    <string name="drive_rebuild_state_building">Building</string>
+
+    <!-- 重构状态 -->
+    <string name="drive_patroll_state_done_or_not_patrolled">Stopped</string>
+    <string name="drive_patroll_state_patrolling">Patrolling</string>
+
+    <!-- 热备状态 -->
+    <string name="drive_hotspare_none">None</string>
+    <string name="drive_hotspare_global">Global</string>
+    <string name="drive_hotspare_dedicated">Dedicated</string>
+
+    <!-- 定位状态 -->
+    <string name="drive_indicator_led_off">Off</string>
+    <string name="drive_indicator_led_blinking">Blinking</string>
+
+    <string name="logical_label_volume_name">Name</string>
+    <string name="logical_label_state">State</string>
+    <string name="logical_label_raid_level">RAID Level</string>
+    <string name="logical_label_capacity">Capacity</string>
+    <string name="logical_label_strip_size">Strip Size</string>
+    <string name="logical_label_sscd_caching">SSCD Caching</string>
+    <string name="logical_label_default_read_policy">Default Read Policy</string>
+    <string name="logical_label_current_read_policy">Current Read Policy</string>
+    <string name="logical_label_default_write_policy">Default Write Policy</string>
+    <string name="logical_label_current_write_policy">Current Write Policy</string>
+    <string name="logical_label_default_io_policy">Default IO Policy</string>
+    <string name="logical_label_current_io_policy">Current IO Policy</string>
+    <string name="logical_label_disk_cache_policy">Disk Cache Policy</string>
+    <string name="logical_label_access_policy">Access Policy</string>
+    <string name="logical_label_init_state">Initialization State</string>
+    <string name="logical_label_bgi_enabled">BGI Enabled</string>
+    <string name="logical_label_l2_cache">Used for L2 Cache</string>
+    <string name="logical_label_consistency_check">Consistency Check</string>
+    <string name="logical_label_boot_disk">Boot Disk</string>
+
+    <!--  InitializationMode  -->
+    <string name="logical_drive_im_UnInit">No Init</string>
+    <string name="logical_drive_im_QuickInit">Quick Init</string>
+    <string name="logical_drive_im_FullInit">Full Init</string>
+
+    <!-- 逻辑盘状态 -->
+    <string name="logical_drive_state_enabled">Optimal</string>
+    <string name="logical_drive_state_degraded">Degraded</string>
+    <string name="logical_drive_state_offline">Offline</string>
+
+    <!-- //Hardware end //-->
+
+    <!-- Realtime state start //-->
+    <string name="rs_section_temperature">Real-Time Temperature</string>
+    <string name="rs_section_health_state">Health Status</string>
+    <string name="rs_section_power_consumption">Power Consumption</string>
+
+    <string name="rs_label_cpu">CPU</string>
+    <string name="rs_label_mainboard">Mainboard</string>
+    <string name="rs_label_fan">Fan</string>
+    <string name="rs_label_power">Power Supply</string>
+    <string name="rs_label_drive">Hard Drive</string>
+    <string name="rs_label_memory">Memory</string>
+    <string name="rs_label_temperature">Temperature</string>
+    <string name="rs_label_power_consumption">Total Power</string>
+    <!-- Realtime state end //-->
+
+    <!-- // Location start // -->
+    <string name="loc_setup_location_label">Device Location</string>
+    <string name="loc_setup_location_input_hint">Enter the location of the device for device locating. </string>
+    <string name="loc_setup_location_format_hint"><![CDATA[Enter a string of 0 to 64 characters, allowing letters, digits, and `~!@#$%^&*()-_=+\\|[{}];:\'\",<.>/?]]></string>
+    <!--<string name="loc_setup_location_format_hint">Enter a string of 0 to 64 characters, allowing letters, digits, and &#32;&#96;&#126;&#33;&#64;&#35;&#36;&#37;&#94;&#38;&#42;&#40;&#41;&#45;&#95;&#61;&#43;&#92;&#124;&#91;&#123;&#125;&#93;&#59;&#58;&#39;&#34;&#44;&#60;&#46;&#62;&#47;&#63;</string>-->
+    <string name="loc_setup_success">Device location updated. </string>
+    <string name="loc_setup_msg_illegal_location">Incorrect Location</string>
+    <!-- // Location end // -->
+
+    <!-- // Power Consumption start // -->
+    <string name="pc_label_power_consumption">Power Consumption Info</string>
+    <string name="pc_value_not_support">Not Supported</string>
+    <string name="pc_label_track_start_time">Statistics Collected</string>
+    <string name="pc_label_consumed_watts">Current Power</string>
+    <string name="pc_label_avg_consumed_watts">System Average Power</string>
+    <string name="pc_label_total_consumed_watts">Total Consumed Power</string>
+    <string name="pc_label_max_consumed_watts">Peak Power</string>
+    <string name="pc_label_max_consumed_on">Peak Occurred</string>
+    <string name="pc_label_cpu_consumed_watts">Current CPU Power</string>
+    <string name="pc_label_memory_consumed_watts">Current Memory Power</string>
+    <string name="pc_recount_success">Data cleared. </string>
+    <!-- // Power Consumption end // -->
+
+    <!-- // Boot Settings start // -->
+    <string name="bs_tab_boot_override">Boot Medium</string>
+    <string name="bs_tab_boot_mode">Boot Mode</string>
+    <string name="bs_boot_override_none">No Override</string>
+    <string name="bs_boot_override_pxe">PXE</string>
+    <string name="bs_boot_override_floppy">FDD/Removable Device</string>
+    <string name="bs_boot_override_cd">DVD Drive</string>
+    <string name="bs_boot_override_hdd">Hard Drive</string>
+    <string name="bs_boot_override_bios_setup">BIOS Setup</string>
+    <string name="bs_label_override_enabled">Effective Permanently</string>
+    <string name="bs_hint_boot_mode_update_not_support">Current device does not support update boot mode.</string>
+    <!-- // Boot Settings end // -->
+
+    <!-- Power Toggle start -->
+    <string name="pt_label_power_buttons">Power Buttons</string>
+    <string name="pt_label_power_on">Power On</string>
+    <string name="pt_label_power_off">Graceful Power Off</string>
+    <string name="pt_label_force_off">Forced Power Off</string>
+    <string name="pt_label_force_recycle">Forced Power Cycle</string>
+    <string name="pt_label_force_restart">Forced Restart</string>
+    <string name="pt_label_NMI">NMI</string>
+    <string name="shield_power_toggle">Shield Panel Power Button</string>
+    <string name="pt_label_safe_power_off_time">Power-Off Timeout</string>
+    <string name="pt_power_off_timeout_section_name">Set Safe Power Off Timeout</string>
+    <string name="pt_label_timeout_enable">Timeout Enabled</string>
+    <string name="pt_label_timeout">Timeout</string>
+    <string name="pt_hint_safe_power_off_timeout">available values: 10 - 6000, default 600, unit second</string>
+    <string name="pt_msg_illegal_timeout">Timeout value must be an integer ranging from 10 to 6000.</string>
+    <string name="pt_prompt_NMI">Before use NMI, ensure that the OS has the NMI processing program. Otherwise, the OS may crash.</string>
+
+    <!-- Power Toggle end -->
+
+    <!-- Indicator LED start -->
+    <string name="indicator_section_led">UID Indicator</string>
+    <string name="indicator_label_led">UID Indicator</string>
+    <string name="indicator_label_blinking">Blinking</string>
+    <string name="indicator_state_lit">On</string>
+    <string name="indicator_state_off">Off</string>
+    <string name="indicator_state_blinking">Blinking</string>
+    <string name="indicator_state_unknown">Unknown</string>
+    <!-- // Indicator LED end  // -->
+
+    <!-- Report start -->
+    <string name="report_label_select_report_items">Select report items</string>
+    <string name="report_label_system_overview">System Info</string>
+    <string name="report_label_cpu_info">CPU</string>
+    <string name="report_label_memory_info">Memory</string>
+    <string name="report_label_storage">Storage</string>
+    <string name="report_label_firmware_info">Firmware</string>
+    <string name="report_label_network_info">Network</string>
+    <string name="report_label_health_info">Health Status</string>
+    <string name="generate_report">Generate</string>
+    <string name="report_label_share_file_type">Choose share file type</string>
+    <string name="report_type_image">Figure</string>
+    <string name="report_type_pdf">PDF</string>
+    <!-- // Report end //-->
+
+    <!-- Firmware start -->
+    <!--
+    <string name="main_ibmc">Active iBMC Image Version</string>
+    <string name="backup_ibmc">Standby iBMC Image Versin</string>
+    <string name="bios_version">BIOS Version</string>
+    <string name="cpld_version">CPLD Version</string>
+    -->
+    <string name="firmware_button_rollback">Switch Over iBMC</string>
+    <string name="firmware_button_reset">Restart iBMC</string>
+    <string name="firmware_prompt_reset">Are you sure you want to restart the iBMC?</string>
+    <string name="firmware_prompt_rollback">Are you sure you want to switch over the iBMC image? </string>
+    <!-- Firmware end -->
+
+    <!-- report -->
+    <string name="display_report_share_title">Share Report</string>
+    <string name="display_report_error_failed_create_file">Failed to generate the report. </string>
+
+    <!-- generate -->
+    <string name="generate_bmc_need_upgrade">This device does not support generate memory report, please upgrade BMC version</string>
+
+    <!-- Collection start -->
+    <string name="select_path">Select Destination Path </string>
+    <string name="folder">Path</string>
+    <string name="collect_label_path">Destination Path</string>
+    <string name="collect_download_path">SD Card/Download/com.huawei.smart.server/</string>
+    <string name="start_collect">Collect</string>
+    <string name="default_path">/sdcard/Download</string>
+    <string name="collect_prompt_delete_file">Delete this collection file?</string>
+    <string name="collect_download_file_list">Collected File List</string>
+    <!-- Collection end -->
+
+    <!-- Set lock screen password start -->
+    <string name="setup_passcode_title">Set App Password</string>
+    <string name="setup_passcode_success">Password set successfully. </string>
+    <string name="disable_passcode_success">Password disabled successfully. </string>
+    <string name="passcode_wrong">The two passwords must be the same.</string>
+    <string name="enter_passcode">Enter the password. </string>
+    <string name="enter_new_passcode">Enter the new password. </string>
+    <string name="enter_old_passcode">Enter the old password. </string>
+    <string name="reenter_passcode">Enter the password again</string>
+    <string name="change_passcode">Change Password</string>
+    <string name="change_passcode_success">Password changed successfully. </string>
+    <string name="lock_label_initial_passcode">Initial application password</string>
+    <string name="lock_label_initial_passcode_confirm">Confirm application password</string>
+
+    <string name="keyboard_clear">Clear</string>
+    <string name="keyboard_backspace">Delete</string>
+
+
+    <string name="unlock_title">Verify</string>
+    <string name="change_passcode_title">Change Password</string>
+    <string name="enable_passcode_title">Turn Password On</string>
+    <string name="disable_passcode_title">Turn Password Off</string>
+    <string name="unlock_error">Incorrect Password. </string>
+
+    <string name="security_label_passcode_protect">Password Protection</string>
+    <string name="security_label_fingerprint_protect">Fingerprint</string>
+    <string name="security_tip_put_finger_on">Place your finger on the fingerprint sensor.</string>
+    <string name="security_label_fingerprint_unlock">Fingerprint Verification</string>
+    <string name="security_label_fingerprint_unlock_failed">Verification failed. Please try again.</string>
+    <string name="security_label_fingerprint_unlock_retry">Fingerprint verification failed. </string>
+    <string name="security_label_fingerprint_locked">Fingerprint verification is locked and cannot be available now. </string>
+    <string name="security_msg_fingerprint_enabled">Fingerprint unlock enabled. </string>
+    <string name="security_msg_fingerprint_disabled">Fingerprint unlock disabled.</string>
+    <string name="security_msg_fingerprint_enable_failed">Operation failed. Check that fingerprint unlock has been enabled and the fingerprint is added.</string>
+
+    <string name="security_label_set_app_password">Set App Password</string>
+    <!-- Set lock screen password end -->
+
+
+    <!-- Discover start -->
+    <string name="scan_one_d_code">Scan Device</string>
+    <string name="scan_prompt_put_image_in_place">Align the barcode within the frame to scan.</string>
+    <string name="scan_action_cancel">Scan cancelled.</string>
+    <string name="scan_action_success">Scan successful. </string>
+    <string name="scan_device_is_not_available">The device has not been added. </string>
+    <!-- Discover end -->
+
+
+    <!-- collection start -->
+    <string name="collection_msg_long_time_task">One-click collection requires several minutes. Please wait.</string>
+    <string name="collection_msg_downloading">downloading...</string>
+    <string name="collection_msg_collecting">This operation requires several minutes. Please wait.</string>
+    <string name="collection_msg_download_to">File download to：</string>
+    <string name="collection_msg_download_failed">download file failed</string>
+    <string name="collection_msg_collect_failed">collection task failed</string>
+    <!-- collection end -->
+
+    <!-- upgrade -->
+    <string name="msg_no_write_storage_permission">Access to storage is restricted. </string>
+    <string name="button_later">Later</string>
+    <string name="button_upgrade">Upgrade</string>
+    <string name="upgrade_updating">Updating app …</string>
+    <string name="upgrade_app_is_latest">The app is the latest version.</string>
+    <string name="upgrade_app_download_start">Start to download …</string>
+    <string name="upgrade_app_download_connect_to_server">Connecting to the server…</string>
+    <string name="upgrade_app_download_percent_prefix">Downloading </string>
+    <string name="upgrade_app_download_finished">Download completed. Please toutch Install.</string>
+    <string name="upgrade_app_download_failed">Updating version failed. </string>
+    <!-- upgrade  end -->
+
+    <!-- feedback -->
+    <string name="how_to_use_app_password">How to Use app Password Protection</string>
+    <string name="how_to_add_device">How to Add Device</string>
+    <string name="how_to_use_qr_code">How to Scan 1D Code</string>
+    <string name="how_to_use_manage_functions">How to Manage Servers</string>
+    <string name="notes">Notes</string>
+    <string name="send_feedback_button">Feedback</string>
+
+    <string name="feedback_label_submit_feedback">Submit Feedback</string>
+    <string name="feedback_label_name">Your Name</string>
+    <string name="feedback_label_email">Your Email</string>
+    <string name="feedback_hint_feedback">Please describe your problem or suggestion so that we can offer better help. Thank you.</string>
+    <string name="feedback_v_name_is_required">Please input your name</string>
+    <string name="feedback_v_email_is_required">Please input correct email address</string>
+    <string name="feedback_v_content_is_required">Please describe your problem or suggestion</string>
+    <string name="feedback_v_content_too_long">Feedback should not exceed 256 characters</string>
+    <string name="feedback_v_name_too_long">Name should not exceed 48 characters</string>
+    <string name="feedback_v_email_too_long">Email should not exceed 48 characters</string>
+
+    <string name="feedback_label_log">Upload Log (Optional)</string>
+    <string name="feedback_label_screenshot">Upload Picture (Optional)</string>
+    <string name="feedback_hint_log">To better solve your problem, please send application logs to us.</string>
+    <string name="feedback_hint_privacy">Privacy statements: 1. The personal email address you entered will not be used for any other purposes but for replying your feedback. 2. Application logs do not contain your private information.</string>
+
+    <!-- feedback -->
+
+
+    <!-- app version introduction -->
+    <string name="app_version_1">V1.0.0</string>
+    <!-- app version introduction -->
+</resources>
