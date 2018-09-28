@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <attr name="title_text" format="integer" />
+        <attr name="title_right_button_label" format="integer" />
+        <attr name="title_right_button_drawable" format="integer" />
+        <attr name="title_right_first_button_drawable" format="integer" />
+        <attr name="title_right_second_button_drawable" format="integer" />
+        <attr name="title_has_dropdown" format="boolean" />
+        <attr name="is_message_titlebar" format="boolean" />
+        <attr name="is_document_titlebar" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="HeaderBar">
+        <attr name="header_header_text" format="integer" />
+        <attr name="header_header_autosize" format="boolean" />
+        <attr name="header_right_button_label" format="integer" />
+        <attr name="header_left_button_label" format="integer" />
+        <attr name="header_right_first_button_drawable" format="integer" />
+        <attr name="header_right_second_button_drawable" format="integer" />
+
+        <attr name="header_left_button_drawable" format="integer" />
+        <attr name="header_right_button_drawable" format="integer" />
+
+        <attr name="header_menu_button_label" format="boolean" />
+        <attr name="header_title_text_color" format="integer" />
+        <attr name="header_is_need_background" format="boolean" />
+        <attr name="header_left_button_is_need_background" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SectionBar">
+        <attr name="section_title" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="DeviceInfoItem">
+        <attr name="device_label" format="integer"/>
+        <attr name="right_icon" format="integer"/>
+        <attr name="input_field_visible" format="boolean"/>
+        <attr name="retract_divider" format="boolean" />
+        <attr name="show_toggle" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LabeledEditText">
+        <attr name="label_text" format="string"/>
+        <attr name="input_hint" format="string"/>
+        <attr name="input_value" format="string"/>
+        <attr name="android:inputType" />
+        <attr name="android:gravity" />
+        <attr name="android:background" />
+        <attr name="show_divider" format="boolean"/>
+        <attr name="border_type" format="string"/>
+        <attr name="input_icon" format="reference"/>
+        <attr name="clickable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LabeledText">
+        <attr name="label" format="string"/>
+        <attr name="value" format="string"/>
+        <attr name="android:drawableStart" />
+        <attr name="android:drawableEnd" />
+        <attr name="with_divider" format="boolean"/>
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <declare-styleable name="Divider">
+        <attr name="android:layout_marginLeft" />
+        <attr name="android:layout_marginRight" />
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <declare-styleable name="LabeledSwitch">
+        <attr name="label_value" format="string"/>
+        <attr name="toggle_label" format="string"/>
+        <attr name="toggle_checked" format="boolean" />
+        <attr name="android:background" />
+        <attr name="has_divider" format="boolean"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ProgressBarText">
+        <attr name="progress_value" format="string"/>
+        <attr name="progress_label" format="string"/>
+        <attr name="android:background" />
+        <attr name="contain_divider" format="boolean"/>
+    </declare-styleable>
+
+</resources>

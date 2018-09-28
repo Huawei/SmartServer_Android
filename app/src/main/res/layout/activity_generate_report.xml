@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <TextView
+        style="@style/FormSection"
+        android:text="@string/report_label_select_report_items" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.huawei.smart.server.widget.LabeledSwitch
+            android:id="@+id/system"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label_value="@string/report_label_system_overview"
+            app:toggle_checked="true" />
+
+        <com.huawei.smart.server.widget.LabeledSwitch
+            android:id="@+id/cpu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label_value="@string/report_label_cpu_info"
+            app:toggle_checked="true" />
+
+        <com.huawei.smart.server.widget.LabeledSwitch
+            android:id="@+id/memory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label_value="@string/report_label_memory_info"
+            app:toggle_checked="true" />
+
+        <com.huawei.smart.server.widget.LabeledSwitch
+            android:id="@+id/storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label_value="@string/report_label_storage"
+            app:toggle_checked="true" />
+
+        <com.huawei.smart.server.widget.LabeledSwitch
+            android:id="@+id/firmware"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label_value="@string/report_label_firmware_info"
+            app:toggle_checked="true" />
+
+        <com.huawei.smart.server.widget.LabeledSwitch
+            android:id="@+id/network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label_value="@string/report_label_network_info"
+            app:toggle_checked="true" />
+
+        <com.huawei.smart.server.widget.LabeledSwitch
+            android:id="@+id/health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:has_divider="false"
+            app:label_value="@string/report_label_health_info"
+            app:toggle_checked="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Button_Confirm"
+        android:text="@string/generate_report" />
+</LinearLayout>

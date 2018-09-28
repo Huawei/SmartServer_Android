@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="device_info_header_image" />
+    <item type="id" name="device_info_section_view" />
+    <item type="id" name="healthy_menu" />
+    <item type="id" name="log_menu"/>
+    <item type="id" name="network_setting_menu"/>
+    <item type="id" name="hardware_menu"/>
+    <item type="id" name="realtiem_status_menu"/>
+    <item type="id" name="device_location_menu"/>
+    <item type="id" name="comsumption_menu"/>
+    <item type="id" name="start_setting_menu"/>
+    <item type="id" name="power_toggle_menu"/>
+    <item type="id" name="expend_menu"/>
+    <item type="id" name="locate_lamp_menu"/>
+    <item type="id" name="firmware_menu"/>
+    <item type="id" name="generate_report_menu"/>
+    <item type="id" name="collection_menu"/>
+    <item type="id" name="folder_menu"/>
+    <item type="id" name="product_mode_item"/>
+    <item type="id"  name="ip_address_item"/>
+    <item type="id"  name="location_item"/>
+    <item type="id"  name="healthy_state_item"/>
+    <item type="id"  name="power_state_item"/>
+    <item type="id"  name="product_serial_number_item"/>
+    <item type="id"  name="asset_tag_item"/>
+    <item type="id"  name="bmc_version_item"/>
+    <item type="id"  name="bios_version_item"/>
+    <item type="id"  name="cpu_item"/>
+    <item type="id"  name="memory_item"/>
+</resources>

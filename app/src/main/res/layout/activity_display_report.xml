@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground"
+        android:orientation="vertical">
+
+        <!-- Title Bar -->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/title_bar"
+            style="@style/TitleBar">
+
+            <LinearLayout
+                android:id="@+id/title_bar_go_back"
+                style="@style/TitleBar.BackButton">
+
+                <ImageView
+                    android:id="@+id/title_bar_go_back_icon"
+                    style="@style/TitleBar.BackButton_Icon" />
+
+                <TextView
+                    android:id="@+id/title_bar_go_back_txt"
+                    style="@style/TitleBar.BackButton_Text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title_bar_title"
+                style="@style/TitleBar.Title">
+
+                <TextView
+                    android:id="@+id/title_bar_title_txt"
+                    style="@style/TitleBar.Title_Text"
+                    android:text="@string/title_display_report" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title_bar_actions"
+                style="@style/TitleBar.ActionButton">
+
+                <ImageView
+                    android:id="@+id/title_bar_action_icon"
+                    style="@style/TitleBar.ActionButton_Icon"
+                    android:src="@mipmap/ic_share" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!-- // Title Bar End // -->
+
+
+        <WebView
+            android:id="@+id/report"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:showIn="@layout/fragment_network">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_section_title_height">
+        <TextView
+            style="@style/FormSection"
+            android:text="@string/ns_network_label_DNS" />
+        <Button
+            android:id="@+id/submit_dns"
+            style="@style/FormSubmitButton" />
+    </RelativeLayout>
+
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/dns_address_origin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        app:label_text="@string/ns_network_label_dns_setup_method"
+        app:clickable="true"
+        app:border_type="bottom"
+        app:input_icon="@mipmap/ic_detail"/>
+
+
+    <!--
+    <com.huawei.server.manager.widget.LabeledEditTextView
+        android:id="@+id/network_domain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        app:border_type="bottom"
+        app:label_text="@string/ns_network_label_domain" />
+        -->
+
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/network_domain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        app:border_type="bottom"
+        app:label_text="@string/ns_network_label_domain" />
+
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/network_primary_dns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        app:border_type="bottom"
+        app:label_text="@string/ns_network_label_primary_DNS" />
+
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/network_alternative_dns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        app:label_text="@string/ns_network_label_alternative_DNS" />
+
+</LinearLayout>

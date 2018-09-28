@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/section_title_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/segment_network_ip_version" />
+
+                <include
+                    android:id="@+id/ns_network_ipv4_segment"
+                    layout="@layout/segment_network_ipv4_setting" />
+
+                <include
+                    android:id="@+id/ns_network_ipv6_segment"
+                    layout="@layout/segment_network_ipv6_setting"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/layout_for_dns_setting"
+                    layout="@layout/segment_network_dns_setting" />
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

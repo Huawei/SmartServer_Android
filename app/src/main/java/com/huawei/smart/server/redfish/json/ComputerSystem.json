@@ -1,0 +1,81 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#Systems/Members/$entity",
+  "@odata.id": "/redfish/v1/Systems/1",
+  "@odata.type": "#ComputerSystem.v1_2_0.ComputerSystem",
+  "Id": "1",
+  "Name": "Computer System",
+  "AssetTag": "ABC",
+  "Manufacturer": "Huawei",
+  "Model": null,
+  "SerialNumber": null,
+  "UUID": "270D0514-1DD2-11B2-AA4C-001823E5F68B",
+  "Status": {
+    "Health": "OK",
+    "State": "Disabled"
+  },
+  "PowerState": "Off",
+  "Boot": {
+    "BootSourceOverrideTarget": "None",
+    "BootSourceOverrideEnabled": "Disabled",
+    "BootSourceOverrideMode": "Legacy",
+    "BootSourceOverrideTarget@Redfish.AllowableValues": [
+      "None",
+      "Pxe",
+      "Floppy",
+      "Cd",
+      "Hdd",
+      "BiosSetup"
+    ]
+  },
+  "BiosVersion": "3.25",
+  "ProcessorSummary": {
+    "Count": 0,
+    "Model": null,
+    "Status": {
+      "HealthRollup": "OK"
+    }
+  },
+  "MemorySummary": {
+    "TotalSystemMemoryGiB": 128,
+    "Status": {
+      "HealthRollup": "OK"
+    }
+  },
+  "Processors": {
+    "@odata.id": "/redfish/v1/Systems/1/Processors"
+  },
+  "Memory": {
+    "@odata.id": "/redfish/v1/Systems/1/Memory"
+  },
+  "EthernetInterfaces": {
+    "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces"
+  },
+  "Storage": {
+    "@odata.id": "/redfish/v1/Systems/1/Storages"
+  },
+  "Links": {
+    "Chassis": [
+      {
+        "@odata.id": "/redfish/v1/Chassis/1"
+      }
+    ],
+    "ManagedBy": [
+      {
+        "@odata.id": "/redfish/v1/Managers/1"
+      }
+    ]
+  },
+  "Actions": {
+    "#ComputerSystem.Reset": {
+      "target": "/redfish/v1/Systems/1/Actions/ComputerSystem.Reset",
+      "ResetType@Redfish.AllowableValues": [
+        "On",
+        "ForceOff",
+        "GracefulShutdown",
+        "ForceRestart",
+        "Nmi",
+        "ForcePowerCycle"
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout  style="@style/DisplayListItem">
+        <TextView
+            android:id="@+id/name"
+            style="@style/DisplayListItem_Label"
+            android:layout_centerVertical="true"
+            android:text="@string/label_default_txt" />
+        <TextView
+            android:id="@+id/status"
+            style="@style/Label_value"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:text="@string/label_value_txt" />
+    </RelativeLayout>
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/manufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_cpu_label_manufacturer" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_cpu_label_model" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/processor_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_cpu_label_processor_id" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_cpu_label_speed_MHZ" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/cores_and_threads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_cpu_label_cores_and_threads" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/L123_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_cpu_label_L123_cache" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/identification_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_cpu_label_part_no"
+        app:with_divider="false"/>
+
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title Bar -->
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            style="@style/TitleBar">
+
+            <LinearLayout
+                android:id="@+id/title_bar_go_back"
+                style="@style/TitleBar.BackButton">
+
+                <ImageView
+                    android:id="@+id/title_bar_go_back_icon"
+                    style="@style/TitleBar.BackButton_Icon" />
+
+                <TextView
+                    android:id="@+id/title_bar_go_back_txt"
+                    style="@style/TitleBar.BackButton_Text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title_bar_title"
+                style="@style/TitleBar.Title">
+
+                <TextView
+                    android:id="@+id/title_bar_title_txt"
+                    style="@style/TitleBar.Title_Text"
+                    android:text="@string/label_value_txt" />
+
+                <TextView
+                    android:id="@+id/title_bar_subtitle_txt"
+                    style="@style/TitleBar.SubTitle_Text"
+                    android:text="@string/label_value_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title_bar_actions"
+                style="@style/TitleBar.ActionButton">
+
+                <ImageView
+                    android:id="@+id/title_bar_action_icon"
+                    style="@style/TitleBar.ActionButton_Icon"
+                    android:src="@mipmap/ic_switch_device" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!-- // Title Bar End // -->
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <!-- Header -->
+                    <include layout="@layout/segment_device_summary_header" />
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/colorContentBackground" />
+
+                    <!-- menus -->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:nestedScrollingEnabled="false"
+                        android:padding="5dp"
+                        android:scrollbars="none"
+                        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                        app:spanCount="4"
+                        tools:listitem="@layout/segment_device_summary_menu_item" />
+
+                    <!-- Device section -->
+                    <TextView
+                        style="@style/DisplayListItem_Section"
+                        android:text="@string/ds_label_basic_info" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_model"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_ipv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_ipv4"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_ipv6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_ipv6"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_location"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_health_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@mipmap/ic_status_ok"
+                        app:label="@string/ds_label_health_state"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_power_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@mipmap/ic_power_off"
+                        app:label="@string/ds_label_power_state"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_serial_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_serial_number"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_asset_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_asset_tag"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_firmware_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_bmc_version"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_bios_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_bios_version"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_cpu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_cpu"
+                        app:value="@string/label_value_txt" />
+
+                    <com.huawei.smart.server.widget.LabeledTextView
+                        android:id="@+id/ds_list_item_memory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:label="@string/ds_label_memory"
+                        app:value="@string/label_value_txt"
+                        app:with_divider="false" />
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_scroll_view_mb"
+                        android:background="@color/colorContentBackground"
+                        ></View>
+
+                </LinearLayout>
+            </ScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

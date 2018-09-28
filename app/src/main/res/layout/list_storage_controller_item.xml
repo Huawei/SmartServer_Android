@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/DisplayListItem">
+        <TextView
+            android:id="@+id/name"
+            style="@style/DisplayListItem_Label"
+            android:layout_centerVertical="true"
+            android:text="@string/label_default_txt" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/Label_value"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:text="@string/label_value_txt" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorDivider"
+        android:layout_marginStart="@dimen/display_list_item_plr"
+        android:layout_marginEnd="@dimen/display_list_item_plr"
+        />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_name" />
+    <!--  -->
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/firmware_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_firmware_version" />
+
+    <!--
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/support_ext_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_support_ext_device" />
+        -->
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/support_raid_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_support_raid_level" />
+
+    <!--
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_mode" />
+        -->
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/configure_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_configure_version" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/memory_size_MB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_memory_size_MB" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_speed" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/sas_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_sas_addr" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/stripe_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_stripe_range" />
+
+    <!--
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/cache_pinned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_cache_pinned" />
+        -->
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/maintain_pd_fail_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_maintain_pd_fail_history" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/copy_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_copy_back_state" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/smart_copy_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_smart_copy_back_state" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/JOBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_JOBD_state" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/bbu_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_bbu_name" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/bbu_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/hardware_storage_label_bbu_state" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/show_volumes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/ic_detail"
+        app:label="@string/hardware_storage_label_volumes"
+        app:value=" " />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/show_disks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/ic_detail"
+        app:label="@string/hardware_storage_label_disk"
+        app:value=" "
+        app:with_divider="false" />
+
+
+</LinearLayout>

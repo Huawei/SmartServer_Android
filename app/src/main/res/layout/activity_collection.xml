@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/widget_title_bar" />
+
+    <TextView
+        style="@style/FormSection"
+        android:text="@string/collect_label_path" />
+
+    <!--
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/folder_selection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/section_height"
+        android:gravity="right"
+        app:clickable="true"
+        app:input_icon="@mipmap/ic_detail"
+        app:label_text="@string/folder"
+        app:input_value="Download/com.huawei.smart.server"/>
+        -->
+
+    <TextView
+        android:id="@+id/collect_download_path"
+        style="@style/FormItem"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/form_list_item_padding_left"
+        android:text="存储卡/Download/com.huawei.smart.server/"
+        android:drawableRight="@mipmap/ic_detail" />
+
+    <Button
+        android:id="@+id/collect"
+        style="@style/Button_Confirm"
+        android:text="@string/start_collect" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <TextView
+        style="@style/FormSection"
+        android:background="@color/colorContentBackground"
+        android:text="@string/profile_select_lang" />
+
+    <RadioGroup
+        android:id="@+id/langRadioGroup"
+        style="@style/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/radio_group_divider"
+        android:showDividers="middle|end">
+
+        <RadioButton
+            android:id="@+id/zh"
+            style="@style/RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/form_list_item_with_radio_h"
+            android:minHeight="@dimen/form_list_item_with_radio_h"
+            android:layout_marginStart="14dp"
+            android:text="@string/lang_zh" />
+        <RadioButton
+            android:id="@+id/en"
+            style="@style/RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/form_list_item_with_radio_h"
+            android:minHeight="@dimen/form_list_item_with_radio_h"
+            android:layout_marginStart="14dp"
+            android:text="@string/lang_en" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Button_Confirm"
+        android:text="@string/button_submit" />
+
+</LinearLayout>

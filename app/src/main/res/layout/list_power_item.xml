@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MultipleLineListItem"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/name"
+            style="@style/MultipleLineListItem_Subject"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Power" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/MultipleLineListItem_SubjectTips"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:drawableStart="@mipmap/ic_status_ok"
+            android:text="@string/hardware_state_enabled" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="@integer/power_supply_grid_column_count">
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_power_label_manufacturer" />
+
+            <TextView
+                android:id="@+id/manufacturer"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_power_label_model" />
+
+            <TextView
+                android:id="@+id/model"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_power_label_part_no" />
+
+            <TextView
+                android:id="@+id/part_no"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_power_label_serial_no" />
+
+            <TextView
+                android:id="@+id/serial_no"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_power_label_capacity_watts" />
+
+            <TextView
+                android:id="@+id/capacity_watts"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/MultipleLineListItem_Item">
+
+            <TextView
+                style="@style/MultipleLineListItem_ItemLabel_SMALL"
+                android:text="@string/hardware_power_label_supply_type" />
+
+            <TextView
+                android:id="@+id/supply_type"
+                style="@style/MultipleLineListItem_ItemContent_SMALL"
+                android:text="@string/label_value_txt" />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <LinearLayout style="@style/MultipleLineListItem_Item"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/MultipleLineListItem_ItemLabel_SMALL"
+            android:text="@string/hardware_power_label_firmware_version" />
+
+        <TextView
+            android:id="@+id/firmware_version"
+            style="@style/MultipleLineListItem_ItemContent_SMALL"
+            android:text="@string/label_value_txt" />
+
+    </LinearLayout>
+
+</LinearLayout>
