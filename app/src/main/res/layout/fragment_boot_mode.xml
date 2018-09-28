@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/FormSection"
+        android:text="@string/bs_tab_boot_mode" />
+
+    <RadioGroup
+        android:id="@+id/boot_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/radio_group_divider"
+        android:showDividers="middle"
+        style="@style/RadioGroup">
+    </RadioGroup>
+
+    <!-- -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:text="@string/bs_hint_boot_mode_update_not_support"
+        android:textColor="@color/colorComment"
+        android:textSize="12sp" />
+
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Button_Confirm"
+        android:text="@string/button_submit" />
+
+</LinearLayout>

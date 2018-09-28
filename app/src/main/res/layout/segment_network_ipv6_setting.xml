@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_section_title_height">
+        <TextView
+            style="@style/FormSection"
+            android:text="@string/ns_network_label_ipv6" />
+        <Button
+            android:id="@+id/submit_ipv6"
+            style="@style/FormSubmitButton" />
+    </RelativeLayout>
+
+    <com.huawei.smart.server.widget.LabeledSwitch
+        android:id="@+id/ns_network_ipv6_addr_origin_dhcp_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label_value="@string/ns_network_label_dhcp"
+        app:toggle_checked="false" />
+
+    <!-- Device section -->
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/ns_network_ipv6_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        app:border_type="bottom"
+        app:label_text="@string/ns_network_label_ip_address" />
+
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/ns_network_ipv6_prefix_len"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:inputType="number"
+        app:border_type="bottom"
+        app:label_text="@string/ns_network_label_prefix_len" />
+
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/ns_network_ipv6_gateway"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        app:border_type="bottom"
+        app:label_text="@string/ns_network_label_gateway" />
+
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/ns_network_ipv6_link_local_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        app:clickable="true"
+        app:label_text="@string/ns_network_label_link_local_address" />
+
+</LinearLayout>

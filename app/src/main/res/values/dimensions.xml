@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Title Bar -->
+    <dimen name="title_bar_go_back_txt_font_size">17sp</dimen>
+    <dimen name="title_bar_classic_height">48sp</dimen>
+
+    <!-- Nav Bar -->
+    <dimen name="nav_bar_height">60dp</dimen>
+    <dimen name="layout_scroll_view_mb">25dp</dimen>
+
+    <dimen name="font_icon_size">34sp</dimen>
+    <dimen name="font_size_huge">28sp</dimen>
+    <dimen name="font_size_large">20sp</dimen>
+    <dimen name="font_size_medium">16sp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_tiny">10sp</dimen>
+
+    <dimen name="margin_between_widget">10dp</dimen>
+    <dimen name="margin_between_widget_sides">20dp</dimen>
+
+    <dimen name="actoin_bar_border_width">1dp</dimen>
+    <dimen name="drop_down_menu_message_title_width">130dp</dimen>
+    <dimen name="font_titlebar_text_size">14sp</dimen>
+    <dimen name="reSkin_headerButtonsPadding">15dp</dimen>
+    <dimen name="tutorial_tip_hot_padding_5dp">5dp</dimen>
+    <dimen name="general_list_view_item_height">100dp</dimen>
+
+    <dimen name="divider_height">0.5dp</dimen>
+
+    <dimen name="list_view_image_padding">1dp</dimen>
+    <dimen name="list_view_text_margin_left">16dp</dimen>
+    <dimen name="listview_delete_btn_width">60dp</dimen>
+
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="header_right_btn_width">46dp</dimen>
+    <dimen name="header_btn_padding">17dp</dimen>
+    <dimen name="header_profile_width">38dp</dimen>
+    <dimen name="header_padding_left_right">10dp</dimen>
+    <dimen name="header_btn_width">24dp</dimen>
+    <dimen name="header_btn_height">24dp</dimen>
+    <dimen name="header_buttons_padding_bottom">2dp</dimen>
+    <dimen name="header_text_padding_bottom">3dp</dimen>
+    <dimen name="header_title_margin_top_bottom">15dp</dimen>
+
+    <dimen name="enter_field_width">200dp</dimen>
+
+    <dimen name="list_corner">5dp</dimen>
+
+    <dimen name="device_info_item_height">45dp</dimen>
+    <dimen name="device_summary_header_h">100dp</dimen>
+    <dimen name="device_summary_header_ptb">25dp</dimen>
+    <dimen name="device_summary_header_plr">20dp</dimen>
+
+    <dimen name="device_summary_header_thumbnail_h">42dp</dimen>
+    <dimen name="device_summary_header_thumbnail_w">136dp</dimen>
+    <dimen name="device_summary_header_thumbnail_mr">14dp</dimen>
+    <dimen name="device_summary_image_wh">25dp</dimen>
+
+
+    <dimen name="device_info_menu_text_height">20dp</dimen>
+    <dimen name="device_info_menu_height">70dp</dimen>
+    <dimen name="device_info_menu_margin">5dp</dimen>
+    <dimen name="device_info_item_section_margin_right">15dp</dimen>
+    <dimen name="device_info_item_margin_right">25dp</dimen>
+
+    <!-- device list items -->
+    <dimen name="device_list_item_height">68dp</dimen>
+    <dimen name="device_list_item_padding_right_left">25dp</dimen>
+    <dimen name="device_list_padding_top_bottom">15dp</dimen>
+    <dimen name="device_list_item_icon_height">20dp</dimen>
+    <dimen name="device_list_item_action_button_width">60dp</dimen>
+    <dimen name="device_list_item_title_font_size">15sp</dimen>
+    <dimen name="device_list_item_desc_font_size">13sp</dimen>
+    <dimen name="device_list_item_title_desc_gap">2dp</dimen>
+    <dimen name="device_list_item_text_margin_right">10dp</dimen>
+
+    <dimen name="device_manager_badge_margin_top">3dp</dimen>
+    <dimen name="device_manager_badge_margin_right">17dp</dimen>
+    <dimen name="device_manager_badge_padding_right">10dp</dimen>
+    <dimen name="device_manager_badge_padding_top">6dp</dimen>
+
+    <dimen name="system_log_selection_bar_height">42dp</dimen>
+    <dimen name="system_log_search_icon_height">15dp</dimen>
+    <dimen name="system_log_search_icon_margin_left">31dp</dimen>
+    <dimen name="system_log_section_height">15dp</dimen>
+    <dimen name="system_log_margin_between_selection">26dp</dimen>
+    <dimen name="system_log_selection_width">86dp</dimen>
+
+    <dimen name="ei_margin_between_widgets">30dp</dimen>
+    <dimen name="checkbox_height">17dp</dimen>
+
+    <dimen name="bottom_bar_height">60dp</dimen>
+
+    <!-- // Top Tab // -->
+    <dimen name="top_tab_h">50dp</dimen>
+    <dimen name="top_tab_indicator_h">3.5dp</dimen>
+    <!-- // Top End // -->
+
+    <!-- // Form // -->
+    <dimen name="section_height">49dp</dimen>
+    <dimen name="section_title_height">60dp</dimen>
+    <dimen name="section_label_width">100dp</dimen>
+
+    <dimen name="form_section_title_height">50dp</dimen>
+    <dimen name="form_list_item_height">44dp</dimen>
+    <dimen name="form_list_item_padding_left">20dp</dimen>
+    <dimen name="form_list_item_padding_right">25dp</dimen>
+    <dimen name="form_list_item_label_width">100dp</dimen>
+    <dimen name="form_list_item_label_max_width">180dp</dimen>
+    <dimen name="form_list_item_input_padding_left">120dp</dimen>
+    <dimen name="form_list_item_input_padding_right">25dp</dimen>
+    <dimen name="form_list_item_input_with_icon_addition_padding">15dp</dimen>
+    <dimen name="form_list_item_input_padding_top">12dp</dimen>
+    <dimen name="form_list_item_input_padding_bottom">12dp</dimen>
+    <dimen name="form_list_item_label_font_size">15sp</dimen>
+    <dimen name="form_list_item_input_font_size">15sp</dimen>
+    <dimen name="form_list_item_with_radio_h">48dp</dimen>
+    <dimen name="form_list_item_with_radio_pl">10dp</dimen>
+    <dimen name="form_list_item_with_radio_ms">14dp</dimen>
+    <dimen name="form_list_item_with_switch_pe">20dp</dimen>
+    <!-- // Form End // -->
+
+    <!-- // Display List Item // -->
+    <dimen name="display_list_item_h">45dp</dimen>
+    <dimen name="display_list_item_max_h">80dp</dimen>
+    <dimen name="display_list_item_plr">25dp</dimen>
+    <dimen name="display_list_item_label_font_size">15sp</dimen>
+    <dimen name="display_list_item_value_font_size">15sp</dimen>
+    <dimen name="display_list_search_item_font_size">13sp</dimen>
+    <!-- // Display List Item End // -->
+
+
+    <!-- // Single line list item // -->
+    <dimen name="sl_list_item_height">54dp</dimen>
+    <dimen name="sl_list_item_section_gap">15dp</dimen>
+    <dimen name="sl_list_item_padding_left">25dp</dimen>
+    <dimen name="sl_list_item_padding_right">25dp</dimen>
+    <dimen name="sl_list_item_with_switch_pe">21dp</dimen>
+    <dimen name="sl_list_item_item_icon_width">24dp</dimen>
+    <dimen name="sl_list_item_item_icon_height">24dp</dimen>
+    <dimen name="sl_list_item_item_text_drawable_padding">8dp</dimen>
+    <dimen name="sl_list_item_item_text_me">32dp</dimen>
+    <dimen name="sl_list_item_item_text_size">15sp</dimen>
+    <!-- // Single line list item End // -->
+
+    <!-- // Multiple line list item // -->
+    <dimen name="ml_list_item_padding_tb">14dp</dimen>
+    <dimen name="ml_list_item_padding_se">20dp</dimen>
+    <dimen name="ml_list_item_element_gap">10dp</dimen>
+    <dimen name="ml_list_item_small_element_gap">4dp</dimen>
+    <dimen name="ml_list_item_drawable_padding">6dp</dimen>
+    <dimen name="ml_list_item_subject_font_size">16sp</dimen>
+    <dimen name="ml_list_item_subject_tips_font_size">14sp</dimen>
+    <dimen name="ml_list_item_subject_h">22dp</dimen>
+    <dimen name="ml_list_item_label_font_size">14sp</dimen>
+    <dimen name="ml_list_small_item_label_font_size">12sp</dimen>
+    <dimen name="ml_list_item_text_font_size">14sp</dimen>
+    <dimen name="ml_list_item_gap">3dp</dimen>
+    <!-- // Multiple line list item End// -->
+
+    <!-- // Search Input // -->
+    <dimen name="search_input_height">30dp</dimen>
+    <dimen name="search_input_margin_left_right">12dp</dimen>
+    <dimen name="search_input_margin_top_bottom">15dp</dimen>
+    <dimen name="search_input_padding_left_right">12dp</dimen>
+    <dimen name="search_input_drawable_padding">5dp</dimen>
+    <dimen name="search_input_text_size">15dp</dimen>
+    <!-- // Search Input End // -->
+
+    <!-- // Action Sheet Start //-->
+    <dimen name="action_sheet_max_height">256dp</dimen>
+    <dimen name="action_sheet_min_height_for_item">48dp</dimen>
+    <dimen name="action_sheet_title_margin_left">16dp</dimen>
+    <!-- // Action Sheet End //-->
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/display_list_item_h"
+    android:paddingStart="@dimen/form_list_item_padding_left">
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/DisplayListItem_Label"
+        android:text="@string/label_default_txt" />
+
+    <TextView
+        android:id="@+id/toggle_label"
+        style="@style/Label"
+        android:layout_toStartOf="@+id/toggle"
+        android:text="@string/ns_network_label_dhcp"
+        android:textColor="@color/colorComment" />
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/toggle"
+        style="@style/SwitchButton"
+        android:layout_marginEnd="@dimen/form_list_item_with_switch_pe"
+        app:sb_checked_color="@color/colorTab" />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/Divider"
+        android:layout_below="@+id/label" />
+
+</RelativeLayout>

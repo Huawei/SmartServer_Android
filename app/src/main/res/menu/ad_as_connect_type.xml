@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ad_connect_type_network"
+        android:icon="@mipmap/ic_wifi"
+        android:checked="true"
+        android:title="@string/ad_connect_type_network" />
+
+    <!--
+    <item
+        android:id="@+id/ad_connect_type_bluetooth"
+        android:icon="@mipmap/ic_bluetooth"
+        android:title="@string/ad_connect_type_bluetooth"
+        android:enabled="false"/>
+    <item
+        android:id="@+id/ad_connect_type_mobile"
+        android:icon="@mipmap/ic_mobile"
+        android:title="@string/ad_connect_type_mobile"
+        android:enabled="false"/>
+     -->
+</menu>

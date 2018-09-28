@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.huawei.smart.server">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+    <application
+        android:name="com.huawei.smart.server.HWApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <meta-data
+            android:name="UpgradeCheckUrl"
+            android:value="http://support.huawei.com/onlinetoolsweb/itexpress/app/smartservermobile/verupgradeinfo.txt"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <service android:name="com.huawei.smart.server.upgrade.DownloadService"/>
+
+        <activity android:name="com.huawei.smart.server.activity.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huawei.smart.server.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name="com.huawei.smart.server.activity.AnyOrientationCaptureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="fullSensor"/>
+        <activity
+            android:name="com.huawei.smart.server.activity.AddDeviceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.DeviceSummaryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.HealthEventActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.SystemLogActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.NetworkSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.HardwareActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.DriveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.LogicalDriveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.NetworkPortActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.RealtimeStateActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.LocationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.PowerConsumptionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.BootSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.PowerToggleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.IndicatorLEDActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.GenerateReportActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.DisplayReportActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.FirmwareActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.CollectionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.CollectFileListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.PolicyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.AppVersionIntroductionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 我的Tab -->
+        <activity
+            android:name="com.huawei.smart.server.activity.AboutUsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.FeedbackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.SubmitFeedbackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.FeedbackDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.ThemeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.huawei.smart.server.activity.LanguageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- Lock screen -->
+        <activity
+            android:name="com.huawei.smart.server.activity.SecurityActivity"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.huawei.smart.server.activity.AppLockActivity"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <!--Search screen -->
+        <activity
+            android:name="com.huawei.smart.server.activity.DeviceSearchActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+        </activity>
+        <activity
+            android:name="com.huawei.smart.server.activity.CustomerScannerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="fullSensor">
+        </activity>
+    </application>
+
+</manifest>

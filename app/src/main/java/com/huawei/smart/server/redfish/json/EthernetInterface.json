@@ -1,0 +1,118 @@
+{
+  "@odata.context":
+  "/redfish/v1/$metadata#Managers/Members/1/EthernetInterfaces/Members/$entity",
+  "@odata.id": "/redfish/v1/Managers/1/EthernetInterfaces/004207072288",
+  "@odata.type": "#EthernetInterface.v1_1_0.EthernetInterface",
+  "Id": "004207072288",
+  "Name": "Manager Ethernet Interface",
+  "PermanentMACAddress": "00:42:07:07:22:88",
+  "HostName": "Huawe",
+  "FQDN": "Huawei.ibmc.com.",
+  "VLAN": {
+    "VLANEnable": true,
+    "VLANId": 60
+  },
+  "IPv4Addresses": [
+    {
+      "Address": "10.10.10.10",
+      "SubnetMask": "255.255.0.0",
+      "Gateway": "10.10.10.1",
+      "AddressOrigin": "Static"
+    }
+  ],
+  "IPv6Addresses": [
+    {"Address": "2015:60b:e3:a05:aed1:63de:c500:731a",
+      "PrefixLength": 64,
+      "AddressOrigin": "Static"
+    },
+    {
+      "Address": "fe80::242:7ff:fe07:2288",
+      "PrefixLength": 64,
+      "AddressOrigin": "LinkLocal"
+    }
+  ],
+  "IPv6StaticAddresses": [
+    {
+      "Address": "2015:60b:e3:a05:aed1:63de:c500:731a",
+      "PrefixLength": 64
+    }
+  ],
+  "IPv6DefaultGateway": "::",
+  "NameServers": [
+    "10.10.10.254",
+    "10.10.10.253"
+  ],
+  "Oem": {
+    "Huawei": {
+      "IPVersion": "IPv4AndIPv6",
+      "NetworkPortMode": "Automatic",
+      "ManagementNetworkPort": {
+        "Type": "Dedicated",
+        "PortNumber": 1
+      },
+      "ManagementNetworkPort@Redfish.AllowableValues": [
+        {
+          "Type": "Dedicated",
+          "PortNumber": 1,
+          "LinkStatus": "Connected"
+        },
+        {
+          "Type": "LOM",
+          "PortNumber": 1,
+          "LinkStatus": "Connected"
+        },
+        {
+          "Type": "LOM",
+          "PortNumber": 2,
+          "LinkStatus": "Disconnected"
+        },
+        {
+          "Type": "LOM",
+          "PortNumber": 3,
+          "LinkStatus": "Disconnected"
+        },
+        {
+          "Type": "LOM",
+          "PortNumber": 4,
+          "LinkStatus": "Disconnected"
+        }],
+      "AdaptivePort": [
+        {
+          "Type": "Dedicated",
+          "PortNumber": 1,
+          "AdaptiveFlag": true
+        },
+        {
+          "Type": "LOM",
+          "PortNumber": 1,
+          "AdaptiveFlag": false
+        },
+        {
+          "Type": "LOM",
+          "PortNumber": 2,
+          "AdaptiveFlag": false
+        },
+        {
+          "Type": "LOM",
+          "PortNumber": 3,
+          "AdaptiveFlag": false
+        },
+        {
+          "Type": "LOM",
+          "PortNumber": 4,
+          "AdaptiveFlag": false
+        }
+      ],
+      "DNSAddressOrigin": "Static"
+    }
+  },
+  "Link": {
+    "Oem": {
+      "Huawei": {
+        "EthernetInterface": {
+          "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces"
+        }
+      }
+    }
+  }
+}

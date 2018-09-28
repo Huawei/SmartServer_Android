@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/form_list_item_height">
+
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:paddingStart="@dimen/sl_list_item_padding_left"
+        android:text="@string/label_default_txt"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/form_list_item_height"
+        android:layout_toStartOf="@+id/share_button"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:src="@mipmap/ic_delete"
+            android:tint="#f12c2c" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/form_list_item_height"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/sl_list_item_padding_left"
+        android:paddingStart="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_share"
+            android:tint="@color/colorAccent" />
+    </LinearLayout>
+
+</RelativeLayout>

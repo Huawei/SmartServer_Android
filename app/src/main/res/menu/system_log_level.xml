@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/system_log_level_critical"
+        android:title="@string/system_log_select_level_critical" />
+    <item
+        android:id="@+id/system_log_level_warning"
+        android:title="@string/system_log_select_level_warning" />
+    <item
+        android:id="@+id/system_log_level_ok"
+        android:title="@string/system_log_select_level_ok" />
+    <item
+        android:id="@+id/system_log_level_all"
+        android:checked="true"
+        android:title="@string/system_log_select_all" />
+</menu>

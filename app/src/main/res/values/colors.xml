@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#303133</color>
+    <color name="textColorPrimary">@color/colorPrimary</color>
+    <color name="colorAccent">#25C4A4</color>
+    <color name="colorTab">@color/colorAccent</color>
+    <color name="colorTitleBar">@color/colorPrimary</color>
+
+    <!-- Nav Bar -->
+    <color name="nav_bar_bg">#fafafa</color>
+    <color name="nav_bar_active_color">@color/colorTab</color>
+    <color name="nav_bar_inactive_color">#7A8381</color>
+    <!-- Nav Bar End -->
+
+    <!--
+    <color name="colorContentBackground">#F1F2F5</color>
+    -->
+    <!--<color name="colorContentBackground">#F1EFF6</color>-->
+    <color name="colorContentBackground">#F3F3F3</color>
+    <!--<color name="colorContentBackground">#f7f2f7</color>-->
+    <color name="colorDivider">@color/colorContentBackground</color>
+    <color name="colorHorizontalDivider">#F2F6FC</color>
+    <color name="colorLightDivider">#F1F2F5</color>
+
+    <color name="colorLightGrey">#939d9b</color>
+    <color name="colorComment">#939d9b</color>
+    <color name="colorDarkGrey">#434847</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRed">#fe4a67</color>
+    <color name="colorDanger">#EA596A</color>
+
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorSecondGrey">#ADADAD</color>
+    <color name="text_action_bar_btn_selector">#FFFFFF</color>
+    <color name="transparentColor">@android:color/transparent</color>
+    <color name="launch_bar_separator_color">#067AB4</color>
+    <color name="bg_list_item_pressed">#F5F5F5</color>
+
+    <color name="menu_item_title_normal">#ADADAD</color>
+    <color name="menu_item_normal">#C9FFFFFF</color>
+    <color name="menu_item_pressed">#D5DADADA</color>
+    <color name="menu_text">#F12162FF</color>
+
+    <!-- title bar -->
+    <color name="title_bar_text_color">#FFFFFF</color>
+
+    <!-- empty list -->
+    <color name="empty_list_label">#9BE6D0</color>
+
+
+    <!-- Search Input -->
+    <color name="search_input_hint_color">@color/colorTab</color>
+    <color name="search_input_text_color">@color/colorSecondGrey</color>
+
+    <!-- form -->
+    <color name="section_title_bg">@color/colorDivider</color>
+    <color name="form_top_bottom_border">@color/colorDivider</color>
+    <color name="form_divider_border">@color/colorDivider</color>
+
+    <!-- loading dialog -->
+    <color name="loading_dialog_bg">#303133</color>
+    <color name="loading_dialog_text">#909399</color>
+
+    <!-- button -->
+    <color name="button_std">#25c4a4</color>
+    <color name="button_danger">#fe4a67</color>
+
+    <!-- single line list item -->
+    <color name="sl_list_item_label_color">@color/colorPrimary</color>
+    <color name="sl_list_item_text_color">@color/colorComment</color>
+
+    <!-- multiple line list item -->
+    <color name="ml_list_item_label_color">@color/colorComment</color>
+    <color name="ml_list_small_item_label_color">#909399</color>
+    <color name="ml_list_item_text_color">#001E00</color>
+
+
+    <!-- list item -->
+    <color name="list_item_title_text_color">@color/colorPrimary</color>
+    <color name="list_item_desc_text_color">@color/colorComment</color>
+
+
+    <!-- set app lock password -->
+    <color name="light_gray">#FFE5E5E5</color>
+    <color name="gray">#FFCCCCCC</color>
+
+</resources>

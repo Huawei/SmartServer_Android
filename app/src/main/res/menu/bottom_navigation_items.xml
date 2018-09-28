@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_device_manager"
+        android:enabled="true"
+        android:icon="@drawable/ic_device_manager"
+        android:orderInCategory="0"
+        android:title="@string/menu_devices" />
+    <item
+        android:id="@+id/action_find"
+        android:enabled="true"
+        android:icon="@drawable/ic_find_new"
+        android:orderInCategory="1"
+        android:title="@string/menu_find" />
+    <item
+        android:id="@+id/action_about_me"
+        android:enabled="true"
+        android:icon="@drawable/ic_about_me"
+        android:orderInCategory="2"
+        android:title="@string/menu_about_me" />
+</menu>

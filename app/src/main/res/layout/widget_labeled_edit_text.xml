@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/FormItem">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        app:errorEnabled="false"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:layout_marginEnd="@dimen/form_list_item_input_padding_right"
+            android:layout_marginStart="@dimen/form_list_item_input_padding_left"
+            android:background="@null"
+            android:ellipsize="middle"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:text="@string/label_value_txt"
+            android:textColor="@color/sl_list_item_text_color"
+            android:textSize="@dimen/form_list_item_input_font_size" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/FormItemLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_default_txt" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/form_list_item_input_padding_right"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_form_list_item_divider"
+        android:visibility="gone" />
+
+</FrameLayout>

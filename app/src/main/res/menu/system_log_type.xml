@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/system_log_type_base"
+        android:title="@string/system_log_select_type_base" />
+    <item
+        android:id="@+id/system_log_type_bmc"
+        android:title="@string/system_log_select_type_bmc" />
+    <item
+        android:id="@+id/system_log_type_button"
+        android:title="@string/system_log_select_type_button" />
+    <item
+        android:id="@+id/system_log_level_all"
+        android:checked="true"
+        android:title="@string/system_log_select_all" />
+</menu>

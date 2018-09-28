@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/SingleLineListItem"
+    android:layout_height="48dp"
+    android:minHeight="48dp">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/SingleLineListItem_ItemText"
+        android:layout_height="48dp"
+        android:text="@string/profile_about_us"
+        />
+
+    <ImageView
+        style="@style/SingleLineListItem_ItemDisplayIcon"
+        android:src="@mipmap/ic_detail" />
+
+</RelativeLayout>

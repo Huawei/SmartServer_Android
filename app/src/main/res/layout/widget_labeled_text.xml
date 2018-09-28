@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/DisplayListItem">
+
+        <TextView
+            android:id="@+id/label"
+            style="@style/DisplayListItem_Label"
+            android:layout_centerVertical="true"
+            android:maxWidth="150dp"
+            android:text="@string/label_default_txt" />
+
+        <TextView
+            android:id="@+id/value"
+            style="@style/Label_value"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/label"
+            android:drawableRight="@mipmap/ic_detail"
+            android:text="@string/label_value_txt" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_marginStart="@dimen/display_list_item_plr"
+        android:layout_marginEnd="@dimen/display_list_item_plr"
+        style="@style/Divider" />
+</LinearLayout>

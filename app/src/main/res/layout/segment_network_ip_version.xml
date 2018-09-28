@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_section_title_height">
+
+        <TextView
+            style="@style/FormSection"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/ns_network_ip_version_setting" />
+
+        <Button
+            android:id="@+id/submit_ip_version"
+            style="@style/FormSubmitButton" />
+
+    </RelativeLayout>
+
+    <com.huawei.smart.server.widget.LabeledEditTextView
+        android:id="@+id/ns_network_ip_version"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        app:clickable="true"
+        app:input_icon="@mipmap/ic_detail"
+        app:input_value="@string/ns_network_ip_version_ipv4"
+        app:label_text="@string/ns_network_ip_version" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground"
+        android:orientation="vertical">
+
+        <com.huawei.smart.server.widget.EnhanceRecyclerView
+            android:id="@+id/health_event_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/layout_scroll_view_mb"
+            android:paddingTop="@dimen/sl_list_item_section_gap"
+            tools:listitem="@layout/list_health_event_item" />
+
+        <include layout="@layout/widget_empty_list_view" />
+
+    </LinearLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

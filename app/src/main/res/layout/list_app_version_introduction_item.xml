@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/SingleLineListItem">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/SingleLineListItem_ItemText"
+        android:text="@string/profile_about_us" />
+
+    <ImageView
+        style="@style/SingleLineListItem_ItemDisplayIcon"
+        android:src="@mipmap/ic_detail" />
+
+</RelativeLayout>

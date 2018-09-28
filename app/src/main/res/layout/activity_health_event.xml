@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/filter_tabs"
+        style="@style/TopTabLayout">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/he_filter_all" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/he_filter_critical" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/he_filter_warning" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <!--
+    <com.huawei.server.manager.widget.EnhanceRecyclerView
+        android:id="@+id/health_event_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sl_list_item_section_gap"
+        android:background="@color/colorContentBackground"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/layout_scroll_view_mb"
+        tools:listitem="@layout/list_health_event_item" />
+
+    <include layout="@layout/widget_empty_list_view" />
+    -->
+
+</LinearLayout>

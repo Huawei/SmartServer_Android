@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/section_title_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorContentBackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.huawei.smart.server.widget.LabeledEditTextView
+                        android:id="@+id/ns_network_port_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sl_list_item_section_gap"
+                        android:gravity="right"
+                        app:clickable="true"
+                        app:input_icon="@mipmap/ic_detail"
+                        app:input_value="@string/ns_port_port_mode_fixed"
+                        app:label_text="@string/ns_port_label_port_type" />
+
+                    <TextView
+                        style="@style/FormSection"
+                        android:text="@string/ns_port_section_port_selection" />
+
+                    <RadioGroup
+                        android:id="@+id/network_port_radio_group"
+                        style="@style/RadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/radio_group_divider"
+                        android:showDividers="middle">
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
+                        android:text="@string/ns_port_hint_lose_conn"
+                        android:textColor="@color/colorComment"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/submit"
+                        style="@style/Button_Confirm"
+                        android:layout_marginBottom="@dimen/layout_scroll_view_mb"
+                        android:text="@string/button_submit" />
+                </LinearLayout>
+                <include layout="@layout/widget_not_support" />
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>
