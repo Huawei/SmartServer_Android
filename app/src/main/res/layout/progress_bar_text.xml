@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/DisplayListItem">
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/DisplayListItem_Label"
+        android:minWidth="60dp"
+        android:text="@string/label_default_txt" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="7.5dp"
+        android:layout_marginEnd="@dimen/margin_between_widget"
+        android:layout_marginStart="@dimen/margin_between_widget"
+        android:layout_toStartOf="@+id/value"
+        android:layout_toEndOf="@+id/label"
+        android:layout_centerVertical="true"
+        android:max="100"
+        android:progress="80"
+        android:progressDrawable="@drawable/progress_bar_green"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/value"
+        style="@style/Label_value" />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/Divider" />
+</RelativeLayout>

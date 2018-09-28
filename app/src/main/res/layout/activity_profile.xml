@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/push_notification_item"
+        android:layout_marginTop="@dimen/sl_list_item_section_gap"
+        style="@style/SingleLineListSwitchItem">
+
+        <TextView
+            style="@style/SingleLineListItem_ItemText"
+            android:drawableStart="@mipmap/ic_push_notification"
+            android:text="@string/profile_push_notification" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/event_push_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            style="@style/SwitchButton" />
+
+    </RelativeLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sl_list_item_section_gap"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lock_item"
+            style="@style/SingleLineListItem">
+
+            <TextView
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_protect"
+                android:text="@string/profile_security" />
+
+            <ImageView style="@style/SingleLineListItem_ItemDisplayIcon" />
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/sl_list_item_padding_left"
+            android:background="@drawable/bg_form_list_item_divider" />
+
+        <RelativeLayout
+            android:id="@+id/lang_item"
+            style="@style/SingleLineListItem">
+
+            <TextView
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_lang"
+                android:text="@string/profile_lang" />
+
+            <ImageView style="@style/SingleLineListItem_ItemDisplayIcon" />
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/sl_list_item_padding_left"
+            android:background="@drawable/bg_form_list_item_divider" />
+
+        <RelativeLayout
+            android:id="@+id/theme_item"
+            style="@style/SingleLineListItem">
+
+            <TextView
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_theme"
+                android:text="@string/profile_theme" />
+
+            <ImageView style="@style/SingleLineListItem_ItemDisplayIcon" />
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/sl_list_item_padding_left"
+            android:background="@drawable/bg_form_list_item_divider" />
+
+        <RelativeLayout
+            android:id="@+id/feedback_item"
+            style="@style/SingleLineListItem">
+
+            <TextView
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_feedback"
+                android:text="@string/profile_send_feedback" />
+
+            <ImageView style="@style/SingleLineListItem_ItemDisplayIcon" />
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/sl_list_item_padding_left"
+            android:background="@drawable/bg_form_list_item_divider" />
+
+        <RelativeLayout
+            android:id="@+id/about_us_item"
+            style="@style/SingleLineListItem">
+
+            <TextView
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_about_us"
+                android:text="@string/profile_about_us" />
+
+            <ImageView style="@style/SingleLineListItem_ItemDisplayIcon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

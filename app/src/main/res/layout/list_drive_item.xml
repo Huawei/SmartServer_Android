@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/DisplayListItem">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/DisplayListItem_Label"
+            android:layout_centerVertical="true"
+            android:text="@string/label_default_txt" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/Label_value"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:text="@string/label_value_txt" />
+    </RelativeLayout>
+
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/protocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_protocol" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/manufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_manufacturer" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_model" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/sn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_sn" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/revision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_revision" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_media" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_temperature" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/fwStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_fw_status" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/sas0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_sas0" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/sas1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_sas1" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/capacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_capacity" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/speedGbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_capable_speed_gbs" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/negotiatedSpeedGbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_negotiated_speed_gbs" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/powerState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_power_state" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/hotSpareType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_hotspare_type" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/rebuildState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_rebuild_state" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/patrolState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_patrol_state" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/indicatorLED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_indicator_led" />
+
+    <com.huawei.smart.server.widget.LabeledTextView
+        android:id="@+id/powerOnHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="@string/drive_label_power_on_hours"
+        app:with_divider="false" />
+
+</LinearLayout>

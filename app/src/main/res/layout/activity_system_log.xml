@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!-- Title Bar -->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/device_list_title"
+            style="@style/TitleBar">
+
+            <LinearLayout
+                android:id="@+id/title_bar_go_back"
+                style="@style/TitleBar.BackButton">
+
+                <ImageView
+                    android:id="@+id/title_bar_go_back_icon"
+                    style="@style/TitleBar.BackButton_Icon" />
+
+                <TextView
+                    android:id="@+id/title_bar_go_back_txt"
+                    style="@style/TitleBar.BackButton_Text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title_bar_title"
+                style="@style/TitleBar.Title">
+
+                <TextView
+                    android:id="@+id/title_bar_title_txt"
+                    style="@style/TitleBar.Title_Text"
+                    android:text="@string/title_device_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title_bar_actions"
+                style="@style/TitleBar.ActionButton">
+
+                <ImageView
+                    android:id="@+id/title_bar_action_icon"
+                    style="@style/TitleBar.ActionButton_Icon"
+                    android:src="@mipmap/ic_delete" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!-- // Title Bar End // -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.huawei.smart.server.widget.HWMEditText
+                android:id="@+id/search"
+                style="@style/SearchInputTextBase"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/search_input_height"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:drawableEnd="@mipmap/ic_clear"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/search_input_margin_left_right"
+                android:text="@string/button_cancel"
+                android:textColor="@color/colorTab"
+                android:textSize="@dimen/font_size_medium"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/system_log_selection_bar_height"
+            android:background="@drawable/border_top_bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/log_level_selection"
+                style="@style/LogSelectionFilter"
+                android:text="@string/system_log_level" />
+
+            <TextView
+                android:id="@+id/log_subject_selection"
+                style="@style/LogSelectionFilter"
+                android:text="@string/system_log_subject" />
+
+            <TextView
+                android:id="@+id/log_create_date"
+                style="@style/LogSelectionFilter"
+                android:text="@string/system_log_create_date" />
+
+            <!--
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:paddingEnd="16dp"
+                android:paddingStart="10dp"
+                android:src="@mipmap/ic_search" />
+                -->
+        </LinearLayout>
+
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.huawei.smart.server.widget.EnhanceRecyclerView
+                    android:id="@+id/logList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorContentBackground"
+                    tools:listitem="@layout/list_health_event_item" />
+
+                <include layout="@layout/widget_empty_list_view" />
+            </LinearLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>

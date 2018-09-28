@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/DisplayListItem_Section"
+                android:text="@string/pc_label_power_consumption" />
+
+            <com.huawei.smart.server.widget.LabeledTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:label="@string/pc_label_track_start_time"
+                app:value="@string/pc_value_not_support" />
+
+            <com.huawei.smart.server.widget.LabeledTextView
+                android:id="@+id/consumed_watts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:label="@string/pc_label_consumed_watts"
+                app:value="@string/pc_value_not_support" />
+
+            <com.huawei.smart.server.widget.LabeledTextView
+                android:id="@+id/avg_consumed_watts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:label="@string/pc_label_avg_consumed_watts"
+                app:value="@string/pc_value_not_support" />
+
+            <com.huawei.smart.server.widget.LabeledTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:label="@string/pc_label_total_consumed_watts"
+                app:value="@string/pc_value_not_support" />
+
+            <com.huawei.smart.server.widget.LabeledTextView
+                android:id="@+id/max_consumed_watts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:label="@string/pc_label_max_consumed_watts"
+                app:value="@string/pc_value_not_support" />
+
+            <com.huawei.smart.server.widget.LabeledTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:label="@string/pc_label_max_consumed_on"
+                app:value="@string/pc_value_not_support" />
+
+            <com.huawei.smart.server.widget.LabeledTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:label="@string/pc_label_cpu_consumed_watts"
+                app:value="@string/pc_value_not_support" />
+
+            <com.huawei.smart.server.widget.LabeledTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:label="@string/pc_label_memory_consumed_watts"
+                app:value="@string/pc_value_not_support"
+                app:with_divider="false" />
+
+
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!--
+    <Button
+        android:id="@+id/submit"
+        style="@style/Button_Confirm"
+        android:text="@string/button_recount" />
+        -->
+
+</LinearLayout>

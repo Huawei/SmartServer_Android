@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sl_list_item_section_gap"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/enable_app_lock_item"
+            style="@style/SingleLineListSwitchItem">
+
+            <TextView
+                android:id="@+id/lock_item_label"
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_lock"
+                android:text="@string/security_label_passcode_protect" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/lock_switch"
+                style="@style/SwitchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/sl_list_item_padding_left"
+            android:background="@drawable/bg_form_list_item_divider" />
+
+        <RelativeLayout
+            android:id="@+id/fingerprint"
+            style="@style/SingleLineListSwitchItem">
+
+            <TextView
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_fingerprint"
+                android:text="@string/security_label_fingerprint_protect" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/fingerprint_switch"
+                style="@style/SwitchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/sl_list_item_padding_left"
+            android:background="@drawable/bg_form_list_item_divider" />
+
+        <RelativeLayout
+            android:id="@+id/change_passcode"
+            style="@style/SingleLineListItem">
+
+            <TextView
+                style="@style/SingleLineListItem_ItemText"
+                android:drawableStart="@mipmap/ic_change_password"
+                android:text="@string/change_passcode" />
+
+            <ImageView style="@style/SingleLineListItem_ItemDisplayIcon" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

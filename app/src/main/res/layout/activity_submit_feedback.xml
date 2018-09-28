@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <TextView
+        style="@style/FormSection"
+        android:text="@string/feedback_label_submit_feedback" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <com.huawei.smart.server.widget.LabeledEditTextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:label_text="@string/feedback_label_name" />
+
+                <View style="@style/Divider" />
+
+                <com.huawei.smart.server.widget.LabeledEditTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    app:label_text="@string/feedback_label_email" />
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.huawei.smart.server.widget.LabeledSwitch
+                        android:id="@+id/allow_upload_log"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:has_divider="false"
+                        app:label_value="@string/feedback_label_log"
+                        app:toggle_checked="false" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dp"
+                        android:paddingEnd="@dimen/form_list_item_padding_left"
+                        android:paddingStart="@dimen/form_list_item_padding_left"
+                        android:text="@string/feedback_hint_log"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="6dp"
+                    android:paddingEnd="@dimen/form_list_item_padding_left"
+                    android:paddingStart="@dimen/form_list_item_padding_left">
+
+                    <TextView
+                        style="@style/FormItemMultipleLineLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp"
+                        android:text="@string/feedback_label_screenshot" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/screenshots"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:choiceMode="singleChoice"
+                        android:divider="@null"
+                        android:fadingEdge="none"
+                        android:listSelector="@android:color/transparent"
+                        android:scrollbarStyle="outsideOverlay"
+                        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                        app:spanCount="4"
+                        tools:listitem="@layout/list_image_item" />
+                </LinearLayout>
+
+                <View style="@style/Divider" />
+
+                <EditText
+                    android:id="@+id/content"
+                    style="@style/MultipleLineInputText"
+                    android:hint="@string/feedback_hint_feedback"
+                    android:lines="4" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp"
+                android:text="@string/feedback_hint_privacy"
+                android:textColor="@color/colorComment"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/Button_Confirm"
+                android:layout_marginTop="12dp"
+                android:text="@string/button_submit" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_full_name"
+        android:textColor="@color/colorComment"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/ic_detail"
+            app:label="@string/about_us_label_features"
+            app:value=" "
+            app:with_divider="false" />
+
+        <View
+            style="@style/Divider"
+            android:layout_marginStart="@dimen/display_list_item_plr" />
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/upgrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/ic_detail"
+            app:label="@string/about_us_label_update"
+            app:value=" "
+            app:with_divider="false" />
+
+        <View
+            style="@style/Divider"
+            android:layout_marginStart="@dimen/display_list_item_plr" />
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/ic_detail"
+            app:label="@string/about_us_label_rate"
+            app:value=" "
+            app:with_divider="false" />
+
+        <View
+            style="@style/Divider"
+            android:layout_marginStart="@dimen/display_list_item_plr" />
+
+        <com.huawei.smart.server.widget.LabeledTextView
+            android:id="@+id/policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/ic_detail"
+            app:label="@string/about_us_label_agreement"
+            app:value=" "
+            app:with_divider="false" />
+    </LinearLayout>
+
+</LinearLayout>

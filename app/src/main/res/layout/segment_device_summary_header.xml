@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DeviceSummaryHeader">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        style="@style/DeviceSummaryHeader_Thumbnail"
+        android:src="@mipmap/device_thumbnail" />
+
+    <TextView
+        android:id="@+id/model"
+        style="@style/DeviceSummaryHeader_ModelText"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_alignParentTop="true"
+        android:text="@string/ds_label_model" />
+
+    <TextView
+        android:id="@+id/power_state"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/model"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:drawablePadding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorComment"
+        android:textSize="13sp"/>
+
+    <ImageView
+        android:id="@+id/health_state_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="11dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#Managers/Members/$entity",
+  "@odata.id": "/redfish/v1/Managers/1",
+  "@odata.type": "#Manager.v1_3_0.Manager",
+  "Id": "1",
+  "Name": "Manager",
+  "ManagerType": "BMC",
+  "FirmwareVersion": "2.50",
+  "UUID": "36E6957C-1DD2-11B2-87FD-0018E1C5D866",
+  "Model": "iBMC",
+  "DateTime": "2017-05-22T17:06:19+00:00",
+  "Status": {
+    "Health": "Ok",
+    "State": "Enabled"
+  },
+  "DateTimeLocalOffset": "GMT",
+  "GraphicalConsole": {
+    "ServiceEnabled": true,
+    "ConnectTypesSupported": [
+      "KVMIP"
+    ],
+    "MaxConcurrentSessions": 2
+  },
+  "SerialConsole": {
+    "ServiceEnabled": true,
+    "ConnectTypesSupported": [
+      "IPMI"
+    ],
+    "MaxConcurrentSessions": 1
+  },
+  "NetworkProtocol": {
+    "@odata.id": "/redfish/v1/Managers/1/NetworkProtocol"
+  },
+  "EthernetInterfaces": {
+    "@odata.id": "/redfish/v1/Managers/1/EthernetInterfaces"
+  },
+  "VirtualMedia": {
+    "@odata.id": "/redfish/v1/Managers/1/VirtualMedia"
+  },
+  "Oem": {
+    "Huawei": {
+      "ProductUniqueID": "0x10200",
+      "PlatformType": "0x10",
+      "RemoteOEMInfo": [
+        1,
+        2,
+        3
+      ],
+      "DeviceLocation": null,
+      "Stateless": {
+        "SysManagerId": null,
+        "SysManagerIP":"10.10.10.1",
+        "SysManagerPort":26957,
+        "ControlPowerOnEnabled": true,
+        "AutoSearchEnabled": false
+      },
+      "LoginRule": [
+        {
+          "MemberId": "Rule1",
+          "RuleEnabled": false,
+          "StartTime": null,
+          "EndTime": null,
+          "IP": null,
+          "Mac": null
+        },
+        {
+          "MemberId": "Rule2",
+          "RuleEnabled": false,
+          "StartTime": null,
+          "EndTime": null,
+          "IP": null,
+          "Mac": null
+        },
+        {
+          "MemberId": "Rule3",
+          "RuleEnabled": false,
+          "StartTime": null,
+          "EndTime": null,
+          "IP": null,
+          "Mac": null
+        }
+      ],
+      "SecurityService": {
+        "@odata.id": "/redfish/v1/Managers/1/SecurityService"
+      },
+      "SnmpService": {
+        "@odata.id": "/redfish/v1/Managers/1/SnmpService"
+      },
+      "SmtpService": {
+        "@odata.id": "/redfish/v1/Managers/1/SmtpService"
+      },
+      "SyslogService": {
+        "@odata.id": "/redfish/v1/Managers/1/SyslogService"
+      },
+      "KvmService": {
+        "@odata.id": "/redfish/v1/Managers/1/KvmService"
+      },
+      "NtpService": {
+        "@odata.id": "/redfish/v1/Managers/1/NtpService"
+      },
+      "VncService": {
+        "@odata.id": "/redfish/v1/Managers/1/VncService"
+      }
+    }
+  },
+  "Actions": {
+    "#Manager.Reset": {
+      "target": "/redfish/v1/Managers/1/Actions/Manager.Reset",
+      "@Redfish.ActionInfo": "/redfish/v1/Managers/1/ResetActionInfo"
+    },
+    "Oem": {
+      "Huawei": {
+        "#Manager.RollBack": {
+          "target": "/redfish/v1/Managers/1/Actions/Oem/Huawei/Manager.RollBack",
+          "@Redfish.ActionInfo": "/redfish/v1/Managers/1/RollBackActionInfo"
+        },
+        "#Manager.Dump": {
+          "target": "/redfish/v1/Managers/1/Actions/Oem/Huawei/Manager.Dump",
+          "@Redfish.ActionInfo": "/redfish/v1/Managers/1/DumpActionInfo"
+        },
+        "#Manager.ExportConfiguration": {
+          "target":
+          "/redfish/v1/Managers/1/Actions/Oem/Huawei/Manager.ExportConfiguration",
+          "@Redfish.ActionInfo":
+          "/redfish/v1/Managers/1/ExportConfigurationActionInfo"
+        },
+        "#Manager.ImportConfiguration": {
+          "target":
+          "/redfish/v1/Managers/1/Actions/Oem/Huawei/Manager.ImportConfiguration",
+          "@Redfish.ActionInfo":
+          "/redfish/v1/Managers/1/ImportConfigurationActionInfo"
+        },
+        "#Manager.PowerOnPermit": {
+          "target": "/redfish/v1/Managers/1/Actions/Oem/Huawei/Manager.PowerOnPermit",
+          "@Redfish.ActionInfo": "/redfish/v1/Managers/1/PowerOnPermitActionInfo"
+        }
+      }
+    }
+  },
+  "Links": {
+    "ManagerForServers": [
+      {
+        "@odata.id": "/redfish/v1/Systems/1"
+      }
+    ],
+    "ManagerForChassis": [
+      {
+        "@odata.id": "/redfish/v1/Chassis/1"
+      }
+    ]
+  }
+}

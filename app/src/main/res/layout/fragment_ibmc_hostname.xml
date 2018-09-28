@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/FormSection"
+            android:text="@string/ns_hostname_section_name" />
+
+        <com.huawei.smart.server.widget.LabeledEditTextView
+            android:id="@+id/ibmc_hostname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:label_text="@string/ns_hostname_label_hostname" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:text="@string/ns_network_hint_hostname"
+            android:textColor="@color/colorComment"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/Button_Confirm"
+            android:text="@string/button_submit" />
+
+    </LinearLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

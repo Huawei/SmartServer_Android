@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorContentBackground"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/DisplayListItem_Section"
+                    android:text="@string/ds_label_menu_firmware" />
+
+                <com.huawei.smart.server.widget.EnhanceRecyclerView
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/widget_labeled_text" />
+
+            <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:paddingTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:drawableTop="@mipmap/empty_item"
+                android:textColor="@color/empty_list_label"
+                android:text="@string/label_list_no_record"
+                android:drawablePadding="24dp"/>
+
+                <View style="@style/Divider" />
+
+                <Button
+                    android:id="@+id/rollback"
+                    style="@style/Button_Confirm"
+                    android:text="@string/firmware_button_rollback" />
+
+                <Button
+                    android:id="@+id/reset"
+                    style="@style/Button_Confirm"
+                    android:layout_marginBottom="@dimen/layout_scroll_view_mb"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/firmware_button_reset" />
+
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
